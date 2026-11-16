@@ -324,9 +324,20 @@ footer .aigc{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,
   .hero h1{font-size:25px;}
   .sec-head h2{font-size:21px;}
 }
+/* 示意图与看图灯箱 */
+.fig-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 14px 10px;margin:0 0 18px;box-shadow:0 2px 10px rgba(18,60,122,.04);max-width:940px;}
+.fig-box svg{width:100%;height:auto;display:block;cursor:zoom-in;}
+.fig-cap{text-align:center;font-size:12.5px;color:var(--gray-light);margin-top:8px;}
+#fig-overlay{position:fixed;inset:0;background:rgba(11,42,91,.93);z-index:200;display:none;overflow:auto;padding:26px 12px 40px;}
+#fig-overlay.show{display:block;}
+#fig-overlay .ov-hint{text-align:center;color:#DCE9FF;font-size:13px;margin-bottom:12px;}
+#fig-overlay .ov-inner{max-width:1400px;margin:0 auto;background:#fff;border-radius:12px;padding:18px;}
+#fig-overlay svg{width:100%;height:auto;display:block;cursor:zoom-out;}
+
 @media print{
-  .topnav,#backtop,#toast{display:none!important;}
-  body{background:#fff;}
+  .topnav,#backtop,#toast,#fig-overlay{display:none!important;}
+  body{background:#fff;
+}
 }
 </style>
 </head>
@@ -1026,6 +1037,85 @@ footer .aigc{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,
   </div>
 
   <h3 class="sub-title">板式衣柜：标准分区解剖（从上到下）</h3>
+  <figure class="fig-box">
+    <svg id="fig1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560">
+      <rect width="1200" height="1560" fill="#ffffff"/>
+      <text x="600" y="70" text-anchor="middle" font-size="30" font-weight="800" fill="#0B2A5B">板式衣柜 · 标准分区剖面图</text>
+      <text x="600" y="106" text-anchor="middle" font-size="17" fill="#5B6B84">柜体 1800 宽 × 2400 高（mm）· 现代生活配比：挂 : 叠 : 抽 ≈ 2 : 1 : 1 · 先盘衣物清单再定分区</text>
+      <rect x="70" y="380" width="46" height="200" fill="#DCE7F9"/>
+      <rect x="70" y="580" width="46" height="520" fill="#134FBB"/>
+      <rect x="70" y="1100" width="46" height="240" fill="#E8ECF2"/>
+      <text x="93" y="480" transform="rotate(-90 93 480)" text-anchor="middle" font-size="14" font-weight="700" fill="#123C7A">高区·过季轻物</text>
+      <text x="93" y="840" transform="rotate(-90 93 840)" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">黄金区 600-1900</text>
+      <text x="93" y="1220" transform="rotate(-90 93 1220)" text-anchor="middle" font-size="14" font-weight="700" fill="#5B6B84">低区·低频重物</text>
+      <text x="58" y="386" text-anchor="end" font-size="13" fill="#5B6B84">2400</text>
+      <text x="58" y="586" text-anchor="end" font-size="13" fill="#5B6B84">1900</text>
+      <text x="58" y="826" text-anchor="end" font-size="13" fill="#5B6B84">1300</text>
+      <text x="58" y="986" text-anchor="end" font-size="13" fill="#5B6B84">900</text>
+      <text x="58" y="1186" text-anchor="end" font-size="13" fill="#5B6B84">500</text>
+      <text x="58" y="1346" text-anchor="end" font-size="13" fill="#5B6B84">0</text>
+      <rect x="200" y="380" width="800" height="200" fill="#FFF4E3" stroke="#123C7A" stroke-width="2"/>
+      <text x="230" y="425" font-size="18" font-weight="800" fill="#8A4B00">被褥区 · 净高 400-500</text>
+      <text x="230" y="456" font-size="14" fill="#8A4B00">过季被褥 · 枕头 · 不用层板（整取整放）</text>
+      <rect x="640" y="440" width="180" height="70" rx="14" fill="#F2D9A8"/>
+      <rect x="662" y="428" width="136" height="18" rx="9" fill="#E5C288"/>
+      <text x="852" y="482" font-size="13" fill="#8A4B00">←被褥卷示意</text>
+      <rect x="200" y="580" width="400" height="600" fill="#EAF2FF" stroke="none"/>
+      <rect x="200" y="380" width="800" height="960" fill="none" stroke="#123C7A" stroke-width="4"/>
+      <line x1="600" y1="580" x2="600" y2="1180" stroke="#123C7A" stroke-width="2"/>
+      <line x1="200" y1="980" x2="1000" y2="980" stroke="#123C7A" stroke-width="2"/>
+      <line x1="200" y1="1180" x2="1000" y2="1180" stroke="#123C7A" stroke-width="2"/>
+      <line x1="210" y1="632" x2="590" y2="632" stroke="#123C7A" stroke-width="5"/>
+      <rect x="396" y="624" width="8" height="12" fill="#123C7A"/>
+      <path d="M400 636 L400 650 M400 650 L382 668 L382 880 L418 880 L418 668 Z" fill="#9CBDF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M300 636 L300 650 M300 650 L284 666 L284 838 L316 838 L316 666 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M500 636 L500 650 M500 650 L484 666 L484 830 L516 830 L516 666 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <text x="215" y="1080" font-size="19" font-weight="800" fill="#123C7A">长衣区 · 净高 1300-1500</text>
+      <text x="215" y="1112" font-size="14" fill="#123C7A">大衣 · 连衣裙 · 长风衣（衣通上方留 5-10cm）</text>
+      <rect x="600" y="580" width="400" height="400" fill="#EAF2FF" stroke="none"/>
+      <line x1="610" y1="632" x2="990" y2="632" stroke="#123C7A" stroke-width="5"/>
+      <rect x="796" y="624" width="8" height="12" fill="#123C7A"/>
+      <path d="M800 636 L800 650 L786 664 L786 800 L814 800 L814 664 Z" fill="#9CBDF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M700 636 L700 650 L688 662 L688 776 L712 776 L712 662 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M900 636 L900 650 L888 662 L888 776 L912 776 L912 662 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <text x="615" y="872" font-size="19" font-weight="800" fill="#123C7A">短衣区 · 净高 900-1100</text>
+      <text x="615" y="904" font-size="14" fill="#123C7A">上衣 · 外套 · 衬衫</text>
+      <rect x="600" y="980" width="400" height="200" fill="#ffffff" stroke="none"/>
+      <line x1="600" y1="1047" x2="1000" y2="1047" stroke="#123C7A" stroke-width="2"/>
+      <line x1="600" y1="1113" x2="1000" y2="1113" stroke="#123C7A" stroke-width="2"/>
+      <rect x="760" y="1006" width="80" height="10" rx="5" fill="#4D8BF5"/>
+      <rect x="760" y="1073" width="80" height="10" rx="5" fill="#4D8BF5"/>
+      <rect x="760" y="1140" width="80" height="10" rx="5" fill="#4D8BF5"/>
+      <text x="615" y="1016" font-size="14" font-weight="700" fill="#123C7A">抽屉① 内衣袜</text>
+      <text x="615" y="1082" font-size="14" font-weight="700" fill="#123C7A">抽屉② 证件首饰</text>
+      <text x="615" y="1150" font-size="14" font-weight="700" fill="#123C7A">抽屉③ 数码小件</text>
+      <rect x="200" y="1180" width="800" height="160" fill="#F0F2F6" stroke="none"/>
+      <rect x="250" y="1226" width="260" height="80" rx="12" fill="#C4CCDA"/>
+      <circle cx="290" cy="1312" r="10" fill="#8A98AE"/>
+      <circle cx="470" cy="1312" r="10" fill="#8A98AE"/>
+      <rect x="262" y="1218" width="60" height="12" rx="6" fill="#4D8BF5"/>
+      <text x="540" y="1240" font-size="18" font-weight="800" fill="#123C7A">底部留空 · 净高 ≈ 500</text>
+      <text x="540" y="1272" font-size="14" fill="#123C7A">行李箱 · 吸尘器 · 保险位（无底板段）</text>
+      <g font-size="15" font-weight="700" fill="#B42323">
+        <line x1="1006" y1="380" x2="1020" y2="380" stroke="#B42323" stroke-width="2"/>
+        <line x1="1006" y1="580" x2="1020" y2="580" stroke="#B42323" stroke-width="2"/>
+        <text x="1030" y="487">被褥 500</text>
+        <line x1="1006" y1="980" x2="1020" y2="980" stroke="#B42323" stroke-width="2"/>
+        <text x="1030" y="787">短衣 1000</text>
+        <line x1="1006" y1="1180" x2="1020" y2="1180" stroke="#B42323" stroke-width="2"/>
+        <text x="1030" y="1087">抽屉 400</text>
+        <line x1="1006" y1="1340" x2="1020" y2="1340" stroke="#B42323" stroke-width="2"/>
+        <text x="1030" y="1267">留空 500</text>
+        <text x="1030" y="846">（左列长衣 1400）</text>
+      </g>
+      <rect x="120" y="1390" width="960" height="64" rx="12" fill="#FDECEC" stroke="#F2C5C5" stroke-width="2"/>
+      <text x="600" y="1414" text-anchor="middle" font-size="15" font-weight="800" fill="#B42323">❌ 翻车预警：层板过多没人叠 · 挂区不足衣服堆椅子 · 抽屉装柜底弯腰疼 · 忘留行李箱位 · 裤架华而不实（挂区底加网篮替代）</text>
+      <text x="600" y="1440" text-anchor="middle" font-size="14" fill="#8F2020">抽屉是黄金区里最贵的面积：300-600 元/个（增项行情），高频小件才配拥有</text>
+      <text x="600" y="1500" text-anchor="middle" font-size="13" fill="#8A98AE">口径：黄金区=站着手能到达的范围；分区高度为通用参考，实际按衣物盘点数字微调 · 2026 华东行情</text>
+      <text x="600" y="1528" text-anchor="middle" font-size="13" fill="#8A98AE">全屋定制选购指南 · 收纳设计篇 配图</text>
+    </svg>
+    <figcaption class="fig-cap">图 1 · 板式衣柜标准分区剖面（点击图片放大）</figcaption>
+  </figure>
   <div class="tbl-wrap">
     <table>
       <thead><tr><th style="width:130px;">分区</th><th>净高参考</th><th>放什么</th><th>设计要点</th></tr></thead>
@@ -1072,11 +1162,170 @@ footer .aigc{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,
     <div class="note warn" style="margin:0;"><b>适合谁</b>：壁橱/走入式衣帽间内嵌、无醛强迫症、预算紧、租房过渡。不适合：精装白墙不想打孔（选落地式或放弃）、要完全封闭防尘、传统"隐形收纳"审美。</div>
   </div>
 
+  <figure class="fig-box">
+    <svg id="fig3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 860">
+      <rect width="1400" height="860" fill="#ffffff"/>
+      <text x="700" y="64" text-anchor="middle" font-size="30" font-weight="800" fill="#0B2A5B">金属衣柜 · 两种结构怎么选（对墙下药）</text>
+      <text x="700" y="100" text-anchor="middle" font-size="17" fill="#5B6B84">无板无胶无醛 · 模块随时重排 · 2米宽金属系统 2000-2700 含安装 ≈ 板式定制（3500-6000）的 1/3~1/2</text>
+      <rect x="70" y="130" width="610" height="560" rx="14" fill="#F8FAFF" stroke="#C7DAFC" stroke-width="2"/>
+      <text x="100" y="168" font-size="21" font-weight="800" fill="#123C7A">① 吊挂式（只挂墙上）</text>
+      <rect x="100" y="200" width="46" height="440" fill="#D5DCE8"/>
+      <line x1="100" y1="200" x2="146" y2="240" stroke="#B4BFD1" stroke-width="2"/>
+      <line x1="100" y1="260" x2="146" y2="300" stroke="#B4BFD1" stroke-width="2"/>
+      <line x1="100" y1="320" x2="146" y2="360" stroke="#B4BFD1" stroke-width="2"/>
+      <line x1="100" y1="380" x2="146" y2="420" stroke="#B4BFD1" stroke-width="2"/>
+      <line x1="100" y1="440" x2="146" y2="480" stroke="#B4BFD1" stroke-width="2"/>
+      <line x1="100" y1="500" x2="146" y2="540" stroke="#B4BFD1" stroke-width="2"/>
+      <line x1="100" y1="560" x2="146" y2="600" stroke="#B4BFD1" stroke-width="2"/>
+      <line x1="100" y1="620" x2="146" y2="640" stroke="#B4BFD1" stroke-width="2"/>
+      <text x="123" y="190" text-anchor="middle" font-size="13" fill="#5B6B84">墙体</text>
+      <rect x="146" y="220" width="14" height="400" fill="#8A98AE"/>
+      <line x1="146" y1="280" x2="620" y2="280" stroke="#123C7A" stroke-width="6"/>
+      <path d="M260 284 L260 296 L246 310 L246 420 L274 420 L274 310 Z" fill="#9CBDF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M380 284 L380 296 L368 308 L368 404 L392 404 L392 308 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M500 284 L500 296 L488 308 L488 404 L512 404 L512 308 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <rect x="170" y="470" width="270" height="90" fill="none" stroke="#5B6B84" stroke-width="3"/>
+      <line x1="170" y1="500" x2="440" y2="500" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="170" y1="530" x2="440" y2="530" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="235" y1="470" x2="235" y2="560" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="305" y1="470" x2="305" y2="560" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="375" y1="470" x2="375" y2="560" stroke="#8A98AE" stroke-width="2"/>
+      <text x="300" y="458" font-size="13" fill="#5B6B84">网篮（耗材，3-4层就够）</text>
+      <rect x="470" y="470" width="160" height="12" fill="#4D8BF5"/>
+      <rect x="470" y="540" width="160" height="12" fill="#4D8BF5"/>
+      <text x="550" y="458" font-size="13" fill="#5B6B84">层板（可重排）</text>
+      <text x="380" y="640" text-anchor="middle" font-size="14" fill="#8A98AE">↓ 底部悬空 · 全部荷载靠墙</text>
+      <rect x="90" y="676" width="570" height="100" rx="10" fill="#FDECEC" stroke="#F2C5C5" stroke-width="2"/>
+      <text x="110" y="706" font-size="15" font-weight="800" fill="#B42323">⚠️ 只靠墙承重：实心砖 / 混凝土墙 OK</text>
+      <text x="110" y="734" font-size="14" fill="#8F2020">轻钢龙骨石膏板 · 空心砖 · 加气块 = 掉落风险</text>
+      <text x="110" y="760" font-size="14" fill="#8F2020">这类墙别选吊挂式 → 换右侧「立柱落地式」</text>
+      <rect x="720" y="130" width="610" height="560" rx="14" fill="#F6FBF8" stroke="#BFE8D5" stroke-width="2"/>
+      <text x="750" y="168" font-size="21" font-weight="800" fill="#0E7A4B">② 立柱落地式（顶天立地）</text>
+      <rect x="760" y="200" width="18" height="440" fill="#5B6B84"/>
+      <rect x="1290" y="200" width="18" height="440" fill="#5B6B84"/>
+      <line x1="760" y1="200" x2="1308" y2="200" stroke="#0E7A4B" stroke-width="3" stroke-dasharray="7 6"/>
+      <line x1="760" y1="640" x2="1308" y2="640" stroke="#0E7A4B" stroke-width="3" stroke-dasharray="7 6"/>
+      <text x="1034" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#0E7A4B">顶支撑（顶住楼板，向下传力）</text>
+      <text x="1034" y="660" text-anchor="middle" font-size="13" font-weight="700" fill="#0E7A4B">地支撑（荷载导入地面）</text>
+      <line x1="778" y1="280" x2="1290" y2="280" stroke="#123C7A" stroke-width="6"/>
+      <path d="M900 284 L900 296 L886 310 L886 420 L914 420 L914 310 Z" fill="#9CBDF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M1030 284 L1030 296 L1018 308 L1018 404 L1042 404 L1042 308 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <path d="M1160 284 L1160 296 L1148 308 L1148 404 L1172 404 L1172 308 Z" fill="#B9CFF7" stroke="#4D8BF5" stroke-width="2"/>
+      <rect x="800" y="470" width="250" height="90" fill="none" stroke="#5B6B84" stroke-width="3"/>
+      <line x1="800" y1="500" x2="1050" y2="500" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="800" y1="530" x2="1050" y2="530" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="860" y1="470" x2="860" y2="560" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="925" y1="470" x2="925" y2="560" stroke="#8A98AE" stroke-width="2"/>
+      <line x1="990" y1="470" x2="990" y2="560" stroke="#8A98AE" stroke-width="2"/>
+      <rect x="1100" y="470" width="160" height="12" fill="#4D8BF5"/>
+      <rect x="1100" y="540" width="160" height="12" fill="#4D8BF5"/>
+      <text x="1120" y="458" font-size="13" fill="#5B6B84">层板/网篮随时重排</text>
+      <rect x="740" y="676" width="570" height="100" rx="10" fill="#E8F7F0" stroke="#BFE8D5" stroke-width="2"/>
+      <text x="760" y="706" font-size="15" font-weight="800" fill="#0E7A4B">✅ 不挑墙：轻体墙 / 精装白墙 / 租房改造选这个</text>
+      <text x="760" y="734" font-size="14" fill="#0B5C3B">荷载走天地支撑更稳；轻钢龙骨·空心砖·加气块墙的解法</text>
+      <text x="760" y="760" font-size="14" fill="#0B5C3B">搬家可拆走（落地式）；配柜门/帘子防尘另算一笔</text>
+      <rect x="70" y="792" width="1260" height="52" rx="10" fill="#0B2A5B"/>
+      <text x="700" y="816" text-anchor="middle" font-size="15" font-weight="700" fill="#FFD98A">材质军规：镀锌钢板 / 防锈钝化型材 + 水性漆或静电粉末喷涂（避免密闭异味）；朝北房 · 一楼 · 梅雨区必选镀锌钢</text>
+      <text x="700" y="838" text-anchor="middle" font-size="14" fill="#B9D3FF">代表玩家：宜家博阿克塞 BOAXEL · 松下日式壁橱系统 · 铂耐沃克等国产金属系 · 全屋定制选购指南 · 收纳设计篇 配图</text>
+    </svg>
+    <figcaption class="fig-cap">图 3 · 金属衣柜两种结构对比（点击图片放大）</figcaption>
+  </figure>
+
   <h3 class="sub-title">橱柜：动线五区 + 地柜黄金法则</h3>
   <div class="card">
     <h5>🔁 动线五区（顺序决定好不好用）</h5>
     <p style="font-size:14.5px;color:var(--gray);">冰箱（储）→ 水槽（洗）→ 备餐台（切）→ 灶台（炒）→ 装盘/洗碗位（盛）。动线顺，做饭少走几十步；动线乱，再贵的橱柜也累人。<b>三个核心点位连线别超过 4-7 步</b>，别让冰箱和水槽隔个厨房。</p>
   </div>
+
+  <figure class="fig-box">
+    <svg id="fig2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 920">
+      <rect width="1400" height="920" fill="#ffffff"/>
+      <text x="700" y="64" text-anchor="middle" font-size="30" font-weight="800" fill="#0B2A5B">橱柜 · 一字型动线五区 + 地柜分区</text>
+      <text x="700" y="100" text-anchor="middle" font-size="17" fill="#5B6B84">储 → 洗 → 切 → 炒 → 盛，核心三点间距 4-7 步内 · 台面高 ≈ 身高÷2 + 5cm</text>
+      <rect x="100" y="130" width="1200" height="74" rx="8" fill="#DCE7F9" stroke="#7FA8F5" stroke-width="2" stroke-dasharray="8 6"/>
+      <text x="700" y="158" text-anchor="middle" font-size="16" font-weight="800" fill="#123C7A">吊柜 · 深 300-350 · 距台面 650-750 · 放轻物低频</text>
+      <text x="700" y="184" text-anchor="middle" font-size="13" fill="#123C7A">吊柜底部加感应灯带（切菜不背光）· 老人房可加下拉篮（接受其故障率）</text>
+      <g stroke="#B47818" stroke-width="4" fill="none" marker-end="url(#fig2arrow)">
+        <path d="M200 235 Q 240 220 290 232"/>
+        <path d="M400 232 Q 480 220 560 232"/>
+        <path d="M700 232 Q 760 220 840 232"/>
+        <path d="M1010 232 Q 1060 220 1110 232"/>
+        <path d="M1230 232 Q 1250 228 1262 236"/>
+      </g>
+      <defs>
+        <marker id="fig2arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+          <path d="M0,0 L8,3 L0,6 Z" fill="#B47818"/>
+        </marker>
+      </defs>
+      <rect x="100" y="240" width="1200" height="180" fill="#F8FAFF" stroke="#123C7A" stroke-width="3"/>
+      <rect x="112" y="252" width="140" height="156" rx="8" fill="#C4CCDA"/>
+      <line x1="112" y1="300" x2="252" y2="300" stroke="#8A98AE" stroke-width="2"/>
+      <rect x="220" y="268" width="14" height="5" rx="2" fill="#5B6B84"/>
+      <text x="182" y="356" text-anchor="middle" font-size="16" font-weight="800" fill="#33445C">冰箱·储</text>
+      <text x="182" y="386" text-anchor="middle" font-size="12" fill="#33445C">600 宽档</text>
+      <rect x="280" y="262" width="180" height="120" rx="14" fill="#ffffff" stroke="#123C7A" stroke-width="3"/>
+      <line x1="370" y1="262" x2="370" y2="382" stroke="#7FA8F5" stroke-width="2"/>
+      <circle cx="370" cy="252" r="9" fill="#4D8BF5"/>
+      <text x="370" y="412" text-anchor="middle" font-size="16" font-weight="800" fill="#123C7A">水槽 · 洗</text>
+      <rect x="480" y="262" width="180" height="26" rx="4" fill="#EFD9A0" transform="rotate(-8 480 262)"/>
+      <text x="660" y="330" text-anchor="middle" font-size="16" font-weight="800" fill="#123C7A">备餐台 · 切</text>
+      <text x="660" y="356" text-anchor="middle" font-size="13" fill="#123C7A">宽度 ≥ 800（砧板+临时盘）</text>
+      <circle cx="980" cy="310" r="34" fill="none" stroke="#123C7A" stroke-width="3"/>
+      <circle cx="1060" cy="310" r="34" fill="none" stroke="#123C7A" stroke-width="3"/>
+      <text x="1020" y="318" text-anchor="middle" font-size="22" font-weight="800" fill="#B47818">灶</text>
+      <text x="1020" y="384" text-anchor="middle" font-size="16" font-weight="800" fill="#123C7A">灶台 · 炒</text>
+      <rect x="1196" y="266" width="92" height="86" rx="10" fill="none" stroke="#4D8BF5" stroke-width="3"/>
+      <circle cx="1242" cy="308" r="24" fill="#DCE7F9"/>
+      <text x="1242" y="386" text-anchor="middle" font-size="16" font-weight="800" fill="#123C7A">盛</text>
+      <rect x="100" y="450" width="1200" height="200" fill="#ffffff" stroke="#123C7A" stroke-width="3"/>
+      <line x1="470" y1="450" x2="470" y2="650" stroke="#7FA8F5" stroke-width="2" stroke-dasharray="6 5"/>
+      <line x1="950" y1="450" x2="950" y2="650" stroke="#7FA8F5" stroke-width="2" stroke-dasharray="6 5"/>
+      <text x="370" y="486" text-anchor="middle" font-size="16" font-weight="800" fill="#123C7A">水槽柜下</text>
+      <text x="370" y="516" text-anchor="middle" font-size="13" fill="#33445C">清洁用品 + 预留电位</text>
+      <text x="370" y="540" text-anchor="middle" font-size="13" fill="#33445C">净水器 · 垃圾处理器 · 小厨宝</text>
+      <text x="370" y="566" text-anchor="middle" font-size="13" fill="#B42323">底板覆铝箔防水 · 304不锈钢铰链</text>
+      <text x="370" y="592" text-anchor="middle" font-size="13" fill="#33445C">（电位在水电期预留，柜厂别重复收费）</text>
+      <g stroke="#123C7A" stroke-width="2" fill="#F8FAFF">
+        <rect x="490" y="476" width="440" height="44" rx="6"/>
+        <rect x="490" y="526" width="440" height="44" rx="6"/>
+        <rect x="490" y="576" width="440" height="44" rx="6"/>
+      </g>
+      <rect x="665" y="494" width="90" height="9" rx="4" fill="#4D8BF5"/>
+      <rect x="665" y="544" width="90" height="9" rx="4" fill="#4D8BF5"/>
+      <rect x="665" y="594" width="90" height="9" rx="4" fill="#4D8BF5"/>
+      <text x="710" y="648" text-anchor="middle" font-size="14" fill="#123C7A">碗碟浅抽（内高100-150）· 米面柜 · 调味抽</text>
+      <text x="1070" y="486" text-anchor="middle" font-size="16" font-weight="800" fill="#123C7A">灶台下</text>
+      <g stroke="#123C7A" stroke-width="2" fill="#F8FAFF">
+        <rect x="960" y="500" width="220" height="60" rx="6"/>
+        <rect x="960" y="566" width="220" height="60" rx="6"/>
+      </g>
+      <circle cx="1010" cy="530" r="16" fill="#DCE7F9" stroke="#4D8BF5" stroke-width="2"/>
+      <circle cx="1070" cy="530" r="12" fill="#EAF2FF" stroke="#4D8BF5" stroke-width="2"/>
+      <text x="1140" y="536" font-size="13" fill="#123C7A">锅具深抽</text>
+      <text x="1140" y="602" font-size="13" fill="#123C7A">内高200-350</text>
+      <text x="176" y="520" text-anchor="middle" font-size="15" font-weight="800" fill="#B42323">地柜黄金法则</text>
+      <text x="176" y="548" text-anchor="middle" font-size="14" font-weight="800" fill="#B42323">能抽不板</text>
+      <text x="176" y="574" text-anchor="middle" font-size="12" fill="#33445C">抽屉化优先</text>
+      <text x="176" y="596" text-anchor="middle" font-size="12" fill="#33445C">验收查假抽</text>
+      <rect x="100" y="680" width="386" height="120" rx="10" fill="#EBF2FF" stroke="#C7DAFC" stroke-width="2"/>
+      <text x="120" y="712" font-size="15" font-weight="800" fill="#123C7A">📏 台面高度公式</text>
+      <text x="120" y="742" font-size="13" fill="#33445C">台面高 ≈ 身高÷2 + 5（cm）</text>
+      <text x="120" y="768" font-size="13" fill="#33445C">进阶错层：洗/切区高、灶台区低 5-10cm</text>
+      <rect x="506" y="680" width="386" height="120" rx="10" fill="#E8F7F0" stroke="#BFE8D5" stroke-width="2"/>
+      <text x="526" y="712" font-size="15" font-weight="800" fill="#0E7A4B">🔌 电位军规</text>
+      <text x="526" y="742" font-size="13" fill="#33445C">台面插座 ≥ 4-5 个，避开动线位；</text>
+      <text x="526" y="768" font-size="13" fill="#33445C">烤箱/微波炉嵌入位留独立回路+散热间隙</text>
+      <rect x="912" y="680" width="388" height="120" rx="10" fill="#FFF4E3" stroke="#F2D9A8" stroke-width="2"/>
+      <text x="932" y="712" font-size="15" font-weight="800" fill="#8A4B00">⚠️ 转角与家务</text>
+      <text x="932" y="742" font-size="13" fill="#33445C">转角慎装小怪物（贵·易坏·难清洁）；</text>
+      <text x="932" y="768" font-size="13" fill="#33445C">家政薄柜 300 深 + 通风孔收湿拖把</text>
+      <rect x="100" y="826" width="1200" height="56" rx="10" fill="#0B2A5B"/>
+      <text x="700" y="850" text-anchor="middle" font-size="16" font-weight="800" fill="#FFD98A">动线口诀：储 → 洗 → 切 → 炒 → 盛 · 冰箱-水槽-灶台三点连线 ≤ 4-7 步 · 动线顺 = 做饭少走几十步</text>
+      <text x="700" y="872" text-anchor="middle" font-size="15" fill="#B9D3FF">地柜抽屉是增项大头（300-600元/个）：数量与单价在报价里一次锁死，安装前再谈就是鱼肉</text>
+      <text x="700" y="902" text-anchor="middle" font-size="13" fill="#8A98AE">全屋定制选购指南 · 收纳设计篇 配图 · 2026 华东行情参考</text>
+    </svg>
+    <figcaption class="fig-cap">图 2 · 橱柜一字型动线布局（点击图片放大）</figcaption>
+  </figure>
   <div class="tbl-wrap">
     <table>
       <thead><tr><th style="width:130px;">位置</th><th>优先放什么</th><th>设计法则</th><th>常见翻车</th></tr></thead>
@@ -1422,6 +1671,32 @@ document.getElementById('chkCopy').addEventListener('click', function(){
   } else {
     fallbackCopy();
   }
+});
+
+/* ====== 示意图灯箱 ====== */
+var figOverlay = document.createElement('div');
+figOverlay.id = 'fig-overlay';
+figOverlay.innerHTML = '<div class="ov-hint">🔍 点击任意处关闭 · Esc 退出</div><div class="ov-inner"></div>';
+document.body.appendChild(figOverlay);
+figOverlay.addEventListener('click', function(){
+  figOverlay.classList.remove('show');
+  figOverlay.querySelector('.ov-inner').innerHTML = '';
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){
+    figOverlay.classList.remove('show');
+    figOverlay.querySelector('.ov-inner').innerHTML = '';
+  }
+});
+document.querySelectorAll('.fig-box > svg').forEach(function(svg){
+  svg.addEventListener('click', function(){
+    var inner = figOverlay.querySelector('.ov-inner');
+    inner.innerHTML = '';
+    var clone = svg.cloneNode(true);
+    clone.removeAttribute('id');
+    inner.appendChild(clone);
+    figOverlay.classList.add('show');
+  });
 });
 </script>
 </body>
