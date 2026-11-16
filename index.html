@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全屋定制选购指南 · 板材五金计价避坑全知识地图（2026上海版）</title>
+<style>
+:root{
+  --blue:#1663F0; --blue-deep:#0B2A5B; --blue-ink:#123C7A;
+  --bg:#F2F6FD; --card:#FFFFFF; --line:#E2E9F5;
+  --ok:#0E7A4B; --ok-bg:#E8F7F0;
+  --warn:#9A5B00; --warn-bg:#FFF4E3;
+  --bad:#B42323; --bad-bg:#FDECEC;
+  --gray:#5B6B84; --gray-light:#8A98AE;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:#1E2B3C;line-height:1.75;font-size:15.5px;
+}
+a{color:var(--blue);text-decoration:none;}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px;}
+
+/* ===== 顶部导航 ===== */
+.topnav{
+  position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  box-shadow:0 2px 12px rgba(11,42,91,.06);
+}
+.topnav .wrap{display:flex;align-items:center;gap:6px;height:56px;}
+.logo{font-weight:800;color:var(--blue-deep);font-size:17px;white-space:nowrap;margin-right:10px;}
+.logo em{color:var(--blue);font-style:normal;}
+.navlinks{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;}
+.navlinks::-webkit-scrollbar{display:none;}
+.navlinks a{
+  padding:6px 12px;border-radius:8px;color:var(--gray);font-size:14px;white-space:nowrap;
+  transition:.15s;
+}
+.navlinks a:hover{color:var(--blue);background:#EDF3FF;}
+.navlinks a.active{color:#fff;background:var(--blue);font-weight:600;}
+
+/* ===== Hero ===== */
+.hero{
+  background:linear-gradient(135deg,#0B2A5B 0%,#1347B2 55%,#1663F0 100%);
+  color:#fff;padding:52px 0 60px;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
+  border-radius:50%;background:rgba(255,255,255,.06);
+}
+.hero::before{
+  content:"";position:absolute;right:60px;bottom:-160px;width:300px;height:300px;
+  border-radius:50%;background:rgba(255,255,255,.05);
+}
+.hero .wrap{position:relative;z-index:2;}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+  padding:4px 14px;border-radius:99px;font-size:13px;margin-bottom:16px;letter-spacing:1px;}
+.hero h1{font-size:40px;font-weight:800;letter-spacing:1px;margin-bottom:12px;}
+.hero p.sub{font-size:17px;opacity:.92;max-width:820px;margin-bottom:8px;}
+.hero p.sub b{color:#FFD98A;font-weight:700;}
+.hero .meta{font-size:13px;opacity:.75;margin-bottom:30px;}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.stat{
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);
+  border-radius:12px;padding:16px 18px;backdrop-filter:blur(4px);
+}
+.stat .num{font-size:26px;font-weight:800;color:#FFD98A;line-height:1.3;}
+.stat .num small{font-size:14px;}
+.stat .lbl{font-size:13px;opacity:.85;margin-top:2px;}
+
+/* ===== 章节布局 ===== */
+main{padding:44px 0 20px;}
+section{margin-bottom:58px;scroll-margin-top:76px;}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--line);
+  padding-bottom:12px;margin-bottom:22px;flex-wrap:wrap;}
+.sec-head .no{font-size:30px;font-weight:800;color:var(--blue);opacity:.9;font-family:Georgia,serif;}
+.sec-head h2{font-size:25px;font-weight:800;color:var(--blue-deep);}
+.sec-head .en{font-size:12.5px;color:var(--gray-light);letter-spacing:2px;text-transform:uppercase;}
+.sec-lead{color:var(--gray);margin-bottom:20px;max-width:920px;}
+.sec-lead b{color:var(--blue-ink);}
+
+h3.sub-title{
+  font-size:18.5px;color:var(--blue-deep);font-weight:800;margin:30px 0 14px;
+  display:flex;align-items:center;gap:8px;
+}
+h3.sub-title::before{content:"";width:5px;height:20px;background:var(--blue);border-radius:3px;flex:none;}
+h4.minor-title{font-size:15.5px;color:var(--blue-ink);font-weight:700;margin:18px 0 8px;}
+
+/* 卡片 */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:0 2px 10px rgba(18,60,122,.04);margin-bottom:16px;}
+.card h5{font-size:16px;font-weight:800;color:var(--blue-deep);margin-bottom:10px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+
+/* 表格 */
+.tbl-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:0 2px 10px rgba(18,60,122,.04);margin-bottom:18px;}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:680px;}
+thead th{background:linear-gradient(135deg,#134A9E,#1663F0);color:#fff;padding:11px 14px;
+  text-align:left;font-weight:700;white-space:nowrap;font-size:13.5px;}
+tbody td{padding:11px 14px;border-bottom:1px solid #EEF2FA;vertical-align:top;}
+tbody tr:nth-child(even){background:#F8FAFF;}
+tbody tr:hover{background:#EDF4FF;}
+td b,td strong{color:var(--blue-deep);}
+.price{color:#B42323;font-weight:700;white-space:nowrap;}
+.td-ok{color:var(--ok);font-weight:600;}
+.td-bad{color:var(--bad);font-weight:600;}
+td small{color:var(--gray-light);display:block;font-size:12.5px;}
+
+/* 提示块 */
+.note{border-radius:12px;padding:14px 18px;margin:14px 0;font-size:14.5px;border:1px solid;}
+.note b{display:block;margin-bottom:4px;}
+.note.tip{background:var(--ok-bg);border-color:#BFE8D5;color:#0B5C3B;}
+.note.tip b{color:var(--ok);}
+.note.warn{background:var(--warn-bg);border-color:#F2D9A8;color:#7A4A05;}
+.note.warn b{color:var(--warn);}
+.note.bad{background:var(--bad-bg);border-color:#F2C5C5;color:#8F2020;}
+.note.bad b{color:var(--bad);}
+.note.info{background:#EBF2FF;border-color:#C7DAFC;color:#1B4B94;}
+.note.info b{color:var(--blue);}
+
+/* 徽章 */
+.badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:700;line-height:1.7;white-space:nowrap;}
+.b-blue{background:#E3EEFF;color:#1450C8;}
+.b-green{background:var(--ok-bg);color:var(--ok);}
+.b-amber{background:var(--warn-bg);color:var(--warn);}
+.b-red{background:var(--bad-bg);color:var(--bad);}
+.b-gray{background:#EEF1F6;color:var(--gray);}
+.b-purple{background:#F1E9FF;color:#6D28D9;}
+
+/* 金字塔 */
+.pyramid{max-width:760px;margin:0 auto;}
+.pyr-row{display:flex;align-items:center;gap:14px;margin-bottom:10px;}
+.pyr-bar{border-radius:10px;color:#fff;padding:12px 18px;flex:1;}
+.pyr-lv{font-size:12px;opacity:.85;display:block;letter-spacing:1px;}
+.pyr-name{font-weight:800;font-size:15.5px;}
+.pyr-note{text-align:left;opacity:.95;font-size:13px;margin-top:4px;}
+.pyr-row:nth-child(1) .pyr-bar{width:34%;background:linear-gradient(135deg,#3B1D6E,#6D28D9);margin-left:33%;}
+.pyr-row:nth-child(2) .pyr-bar{width:52%;background:linear-gradient(135deg,#0B2A5B,#134FBB);margin-left:24%;}
+.pyr-row:nth-child(3) .pyr-bar{width:70%;background:linear-gradient(135deg,#0E7A4B,#16A06A);margin-left:15%;}
+.pyr-row:nth-child(4) .pyr-bar{width:92%;background:linear-gradient(135deg,#8A98AE,#B4BFD1);margin-left:4%;}
+
+/* 成本构成条 */
+.cost-bar{display:flex;height:46px;border-radius:10px;overflow:hidden;font-size:13px;color:#fff;font-weight:700;margin:16px 0 8px;}
+.cost-bar div{display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.3;padding:0 4px;}
+.cost-legend{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--gray);margin-bottom:6px;}
+.cdot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;}
+
+/* 三明治结构 */
+.sandwich{display:flex;flex-direction:column;gap:0;max-width:640px;margin:10px auto;}
+.sw-layer{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 20px;
+  border-radius:10px;margin-bottom:4px;font-size:14.5px;}
+.sw-layer b{font-size:15px;}
+.sw-layer .role{text-align:right;font-size:12.5px;opacity:.85;max-width:52%;}
+.sw1{background:#DCE9FF;color:#123C7A;border:1.5px dashed #7FA8F5;}
+.sw2{background:#C9FAE3;color:#0B5C3B;border:1.5px dashed #57CD97;}
+.sw3{background:#FFE8D2;color:#8A4B00;border:1.5px dashed #F2A96B;}
+.sw-arrow{text-align:center;color:var(--gray-light);font-size:13px;}
+
+/* 决策树 */
+.tree{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px;}
+.tree-row{display:grid;grid-template-columns:190px 1fr;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line);align-items:start;}
+.tree-row:last-child{border-bottom:none;}
+.tree-budget{font-weight:800;color:var(--blue-deep);background:#EDF3FF;border-radius:10px;padding:10px 14px;white-space:nowrap;}
+.tree-budget small{display:block;font-weight:500;color:var(--gray);font-size:12px;}
+
+/* 时间轴 */
+.steps{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;counter-reset:step;}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 12px;position:relative;counter-increment:step;min-height:150px;}
+.step::before{content:counter(step);position:absolute;top:-11px;left:12px;background:var(--blue);color:#fff;
+  width:24px;height:24px;border-radius:50%;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+.step b{display:block;color:var(--blue-deep);margin:8px 0 6px;font-size:14px;}
+.step p{font-size:12.5px;color:var(--gray);line-height:1.6;}
+
+/* 常见问题QA */
+.qa{border-left:4px solid var(--blue);background:var(--card);border-radius:0 12px 12px 0;
+  padding:14px 20px;margin-bottom:12px;box-shadow:0 1px 6px rgba(18,60,122,.04);}
+.qa .q{font-weight:800;color:var(--blue-deep);}
+.qa .q::before{content:"Q ";color:var(--blue);font-family:Georgia,serif;font-size:15px;}
+.qa .a{color:#33445C;margin-top:6px;font-size:14.5px;}
+.qa .a::before{content:"A ";color:var(--ok);font-weight:800;}
+
+/* 你家现场卡 */
+.mycard{
+  background:linear-gradient(135deg,#FFF9EC,#FFF3D6);border:1.5px solid #EFD9A0;
+  border-radius:var(--radius);padding:18px 22px;margin:18px 0;position:relative;
+}
+.mycard::before{content:"🏠 你家现场";position:absolute;top:-11px;left:18px;background:#B47818;color:#fff;
+  font-size:12px;font-weight:700;padding:2px 12px;border-radius:99px;letter-spacing:1px;}
+.mycard p{font-size:14.5px;color:#6B4F14;margin-top:4px;}
+.mycard ol{padding-left:20px;}
+.mycard li{font-size:14.5px;color:#6B4F14;margin:4px 0;}
+
+/* ===== 工具区 ===== */
+.tool-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start;}
+.calculator{background:var(--card);border:1.5px solid #B9CFF7;border-radius:var(--radius);
+  padding:24px 26px;box-shadow:0 6px 24px rgba(18,60,122,.08);}
+.calculator h5{font-size:18px;color:var(--blue-deep);font-weight:800;margin-bottom:4px;}
+.calculator .desc{font-size:13px;color:var(--gray-light);margin-bottom:18px;}
+.field{margin-bottom:15px;}
+.field label{display:block;font-size:13.5px;font-weight:700;color:var(--blue-ink);margin-bottom:6px;}
+.field .hint{font-size:12px;color:var(--gray-light);font-weight:400;margin-left:6px;}
+.field input[type=number]{
+  width:100%;padding:9px 12px;border:1.5px solid var(--line);border-radius:9px;font-size:15px;
+  font-family:inherit;background:#FAFCFF;
+}
+.field input[type=number]:focus{outline:none;border-color:var(--blue);}
+.seg{display:flex;flex-wrap:wrap;gap:6px;}
+.seg label{
+  padding:7px 13px;border:1.5px solid var(--line);border-radius:9px;font-size:13px;cursor:pointer;
+  color:var(--gray);transition:.15s;font-weight:500;user-select:none;background:#FAFCFF;
+}
+.seg input{display:none;}
+.seg label:has(input:checked){background:var(--blue);color:#fff;border-color:var(--blue);font-weight:700;}
+.seg label:has(input:checked) small{opacity:.85;}
+.seg label small{display:block;font-size:11px;opacity:.75;font-weight:400;}
+.switch-row{display:flex;align-items:center;gap:10px;padding:10px 0;}
+.switch-row input{width:18px;height:18px;accent-color:var(--blue);cursor:pointer;}
+.switch-row span{font-size:14px;color:var(--blue-ink);font-weight:600;}
+.result{
+  background:linear-gradient(135deg,#0B2A5B,#1552C4);border-radius:12px;padding:18px 22px;margin-top:18px;color:#fff;
+}
+.result .r-title{font-size:13px;opacity:.8;letter-spacing:1px;}
+.result .r-money{font-size:34px;font-weight:800;color:#FFD98A;line-height:1.25;}
+.result .r-money small{font-size:16px;color:#fff;opacity:.8;font-weight:600;}
+.result .r-gap{font-size:13.5px;margin-top:8px;background:rgba(255,255,255,.12);border-radius:8px;padding:8px 12px;}
+.result table{margin-top:12px;min-width:0;font-size:13px;}
+.result thead th{background:rgba(255,255,255,.12);padding:6px 10px;font-size:12px;}
+.result tbody td{border-bottom:1px solid rgba(255,255,255,.14);padding:5px 10px;color:#EAF1FF;}
+.result tbody tr:nth-child(even){background:transparent;}
+.result tbody tr:hover{background:rgba(255,255,255,.06);}
+.r-note{font-size:12px;opacity:.7;margin-top:10px;line-height:1.6;}
+
+/* 增项清单 */
+.checklist{background:var(--card);border:1.5px solid #B9CFF7;border-radius:var(--radius);
+  padding:24px 26px;box-shadow:0 6px 24px rgba(18,60,122,.08);}
+.checklist h5{font-size:18px;color:var(--blue-deep);font-weight:800;margin-bottom:4px;}
+.checklist .desc{font-size:13px;color:var(--gray-light);margin-bottom:14px;}
+.chk-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px;}
+.chk-count{font-size:13px;color:var(--gray);}
+.chk-count b{color:var(--blue);font-size:16px;}
+.chk-list{max-height:520px;overflow-y:auto;padding-right:6px;}
+.chk-list::-webkit-scrollbar{width:6px;}
+.chk-list::-webkit-scrollbar-thumb{background:#C7D6F0;border-radius:3px;}
+.chk-item{
+  display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);
+  border-radius:10px;margin-bottom:8px;background:#FAFCFF;cursor:pointer;transition:.15s;
+}
+.chk-item:hover{border-color:#9CBDF7;}
+.chk-item.done{background:#EDF8F2;border-color:#A5DFC5;}
+.chk-item input{width:17px;height:17px;accent-color:var(--ok);margin-top:3px;flex:none;cursor:pointer;}
+.chk-item .t{font-size:14px;font-weight:700;color:var(--blue-deep);}
+.chk-item .t .chkprice{color:var(--bad);font-weight:700;margin-left:6px;font-size:12.5px;}
+.chk-item .d{font-size:12.5px;color:var(--gray);line-height:1.55;margin-top:2px;}
+.btn{
+  display:inline-block;background:var(--blue);color:#fff;border:none;border-radius:10px;
+  padding:10px 22px;font-size:14.5px;font-weight:700;cursor:pointer;font-family:inherit;
+  transition:.15s;box-shadow:0 3px 10px rgba(22,99,240,.3);
+}
+.btn:hover{background:#0F4FCB;transform:translateY(-1px);}
+.btn.ghost{background:#fff;color:var(--blue);border:1.5px solid var(--blue);box-shadow:none;}
+.btn.ghost:hover{background:#EDF3FF;}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+
+/* toast */
+#toast{
+  position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);
+  background:#0B2A5B;color:#fff;padding:12px 26px;border-radius:99px;font-size:14px;
+  opacity:0;transition:.35s;z-index:999;box-shadow:0 8px 30px rgba(11,42,91,.35);pointer-events:none;
+  max-width:90vw;text-align:center;
+}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+/* 回到顶部 */
+#backtop{
+  position:fixed;right:22px;bottom:26px;width:42px;height:42px;border-radius:50%;
+  background:var(--blue);color:#fff;border:none;font-size:18px;cursor:pointer;opacity:0;
+  transition:.3s;z-index:99;box-shadow:0 4px 14px rgba(22,99,240,.4);
+}
+#backtop.show{opacity:1;}
+#backtop:hover{background:#0F4FCB;}
+
+/* 记忆卡 */
+.mem-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.mem{background:linear-gradient(135deg,#0B2A5B,#1552C4);color:#fff;border-radius:12px;padding:16px 18px;font-size:14.5px;}
+.mem b{color:#FFD98A;display:block;margin-bottom:4px;font-size:15px;}
+.mem.blue2{background:linear-gradient(135deg,#123C7A,#1663F0);}
+.mem.blue3{background:linear-gradient(135deg,#0E4A38,#12805C);}
+.mem.blue4{background:linear-gradient(135deg,#5B3A8E,#7C4DCB);}
+
+/* 价格带图 */
+.price-band{margin:16px 0;}
+.pb-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.pb-lbl{width:200px;font-size:13.5px;font-weight:700;color:var(--blue-ink);text-align:right;flex:none;line-height:1.4;}
+.pb-track{flex:1;height:34px;border-radius:8px;position:relative;background:linear-gradient(90deg,#93E9C3,#FFD98A,#F5A3A3);}
+.pb-bar{position:absolute;top:0;height:100%;border-radius:0;display:flex;align-items:center;padding:0 10px;
+  color:var(--blue-deep);font-weight:800;font-size:13px;white-space:nowrap;overflow:hidden;}
+
+/* 页脚 */
+footer{background:#0B2A5B;color:#9FB6DE;padding:34px 0;margin-top:20px;}
+footer .wrap{font-size:13px;line-height:1.9;}
+footer b{color:#E6EEFB;}
+footer .aigc{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.12);
+  color:#7A93BE;font-size:12px;}
+
+/* 响应式 */
+@media (max-width:900px){
+  .stat-row{grid-template-columns:repeat(2,1fr);}
+  .grid2,.grid3,.grid4,.tool-grid{grid-template-columns:1fr;}
+  .steps{grid-template-columns:repeat(3,1fr);}
+  .hero h1{font-size:30px;}
+  .pyr-row{flex-direction:column;align-items:stretch;gap:4px;}
+  .pyr-row:nth-child(n) .pyr-bar{width:100%!important;margin:0!important;}
+  .tree-row{grid-template-columns:1fr;}
+  .mem-cards{grid-template-columns:1fr;}
+  .pb-lbl{width:110px;text-align:left;}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:repeat(2,1fr);}
+  .hero h1{font-size:25px;}
+  .sec-head h2{font-size:21px;}
+}
+@media print{
+  .topnav,#backtop,#toast{display:none!important;}
+  body{background:#fff;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 导航 ================= -->
+<nav class="topnav" id="topnav">
+  <div class="wrap">
+    <div class="logo">🪵 <em>全屋定制</em>生存指南</div>
+    <div class="navlinks" id="navlinks">
+      <a href="#s0" class="active">概览</a>
+      <a href="#s1">板材</a>
+      <a href="#s2">环保</a>
+      <a href="#s3">饰面·封边</a>
+      <a href="#s4">五金</a>
+      <a href="#s5">辅料结构</a>
+      <a href="#s6">计价·增项</a>
+      <a href="#s7">商家·渠道</a>
+      <a href="#s8">流程·合同</a>
+      <a href="#s9">工具</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <div class="tag">2026 · 上海（华东）行情版 · 基于公开报道与行业常识整理</div>
+    <h1>全屋定制选购指南</h1>
+    <p class="sub">从<b>板材、五金、辅料、计价方式到商家谈判</b>，一页说清楚：你付的每一分钱，买到的到底是什么、值不值、怎么砍。</p>
+    <p class="sub" style="font-size:14px;opacity:.8;">看完你将达到的水平：销售跟你聊板材，你比他熟；他报套餐价，你能当场拆出真实落地价。</p>
+    <div class="stat-row">
+      <div class="stat"><div class="num">499<small> 元/㎡起</small></div><div class="lbl">2026 价格战套餐入场价（上市品牌子品牌）</div></div>
+      <div class="stat"><div class="num">≤0.050<small> mg/m³</small></div><div class="lbl">2026年6月起强制国标 E0 线，E1 不再是卖点</div></div>
+      <div class="stat"><div class="num">×1.5~2.5</div><div class="lbl">套餐广告价 → 真实落地价的常见倍数</div></div>
+      <div class="stat"><div class="num">60%+</div><div class="lbl">定制投诉中超六成源于"合同外增项"</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<!-- ================= 第0章 概览 ================= -->
+<section id="s0">
+  <div class="sec-head"><span class="no">00</span><h2>先建立认知框架：钱花在哪了</h2><span class="en">Overview</span></div>
+  <p class="sec-lead">全屋定制没有任何神秘成分，本质上你在买四样东西：<b>板材（看得见的）、五金（天天摸的）、工艺（封边等看不见的细节）、服务（设计安装售后）</b>。所有价格差异、所有套路，都在这四样里做文章。</p>
+
+  <div class="card">
+    <h5>🥪 板材是个"三明治"，别一锅糊涂谈"板材"</h5>
+    <p style="margin-bottom:14px;color:var(--gray);">销售说"我们家用了XX板"，可能指基材、也可能指饰面、还可能是自创营销名。记住这个结构再谈，就不会被绕晕：</p>
+    <div class="sandwich">
+      <div class="sw-layer sw1"><b>① 饰面（颜值层）</b><span class="role">三聚氰胺纸 / PET肤感 / 亚克力 / 烤漆 / 实木皮 —— 决定摸起来的手感、耐刮耐污性</span></div>
+      <div class="sw-arrow">▼▼▼</div>
+      <div class="sw-layer sw2"><b>② 基材（骨头层）</b><span class="role">颗粒板 / 多层板 / 密度板 / 禾香板 / 实木 —— 决定环保等级、握钉力、防潮、会不会变形</span></div>
+      <div class="sw-arrow">▼▼▼</div>
+      <div class="sw-layer sw3"><b>③ 封边（工艺层）</b><span class="role">EVA胶 / PUR胶 / 激光封边 —— 决定用五年后会不会开边、黑不黑缝，是低价套餐偷工重灾区</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5>💸 一平米柜子（投影）的钱大概怎么分</h5>
+    <div class="cost-bar">
+      <div style="width:38%;background:#134FBB;">柜体基材+层板 38%</div>
+      <div style="width:24%;background:#1663F0;">门板+饰面 24%</div>
+      <div style="width:14%;background:#4D8BF5;">五金 14%</div>
+      <div style="width:5%;background:#93B7FA;">封边耗材 5%</div>
+      <div style="width:19%;background:#0B2A5B;">设计/加工/安装/售后 19%</div>
+    </div>
+    <div class="cost-legend">
+      <span><i class="cdot" style="background:#134FBB"></i>基材越贵≠越好，适合场景才对</span>
+      <span><i class="cdot" style="background:#1663F0"></i>门板是颜值大头，PET/烤漆贵出50-100%</span>
+      <span><i class="cdot" style="background:#4D8BF5"></i>五金全进口比全国产贵1500-3000/全屋</span>
+      <span><i class="cdot" style="background:#0B2A5B"></i>大品牌的溢价主要在这19%+品牌费里</span>
+    </div>
+    <div class="note info" style="margin-top:12px;"><b>同是颗粒板，为什么价格差5倍？</b>差异来自：板材品牌与环保等级（普通E0 ≈ 130元/张，爱格进口 ≈ 400元/张）、饰面工艺、封边设备、五金档次、设计与服务。搞清楚各章节后你就能逐项拆价。</div>
+  </div>
+
+  <div class="card">
+    <h5>📉 2026年，你必须知道的四个市场事实</h5>
+    <table style="min-width:0;">
+      <tr><td style="width:130px;"><span class="badge b-red">价格战白热化</span></td><td>欧派、索菲亚等上市品牌借子品牌把价格打到 <b class="price">499~699元/㎡</b>（如欧派普惠子品牌"菲思卡尔"：ENF饰面板499/㎡、多层板/UV超晶板599/㎡）。<b>这是入场价不是落地价</b>——详见第6章拆解。</td></tr>
+      <tr><td><span class="badge b-amber">新国标实施</span></td><td>2026年6月1日起，强制性国标 <b>GB 18580-2025</b> 落地：市售人造板必须达到 <b>E0级（甲醛≤0.050mg/m³）</b>，E1不再是市场通行证。再有人拿"E1级"当卖点，你知道该怎么回应了。</td></tr>
+      <tr><td><span class="badge b-red">行业动荡</span></td><td>2025-2026年上市定制企业普遍现金流吃紧，<b>欧派一年净减468家门店、索菲亚一季度转亏</b>。交大额定金前请多想一步：这家店能不能撑到我家安装完？（对策见第7章）</td></tr>
+      <tr><td><span class="badge b-amber">捆绑新套路</span></td><td>低价套餐开始捆绑销售：有案例合同写明"成品家具选购须占定制合同金额50%以上"才能享优惠，定金后报价从1.2万变1.5万。<b>任何捆绑条款写进合同前，三思。</b></td></tr>
+    </table>
+  </div>
+
+</section>
+
+<!-- ================= 第1章 板材 ================= -->
+<section id="s1">
+  <div class="sec-head"><span class="no">01</span><h2>板材：9 种基材一次讲透</h2><span class="en">Board Materials</span></div>
+  <p class="sec-lead">基材决定环保、强度、防潮三大底层素质。看懂这张表，销售的任何"XX板"话术你都能对号入座。</p>
+
+  <h3 class="sub-title">先打假：这些名字全是营销话术</h3>
+  <div class="grid2">
+    <div class="card"><h5>🗣️ 术语迷惑大赏</h5>
+      <table style="min-width:0;">
+        <tr><td><b>实木颗粒板</b></td><td>= 颗粒板（刨花板）。带"实木"俩字纯属蹭，<span class="td-bad">和实木没关系</span>。</td></tr>
+        <tr><td><b>实木多层板</b></td><td>= 多层板（胶合板）。是木单板压的，属实，但<span class="td-bad">≠实木</span>，"实木感"没有增强。</td></tr>
+        <tr><td><b>生态板 / 免漆板</b></td><td>= 基材（多为细木工板芯）贴三聚氰胺纸的<b>通称</b>，什么基材都可叫"生态板"。它描述的是饰面方式，不是一种板。</td></tr>
+        <tr><td><b>康纯板 / 醛净板 / 原净板 / XX纯板</b></td><td>品牌给代工基材起的<b>注册商标名</b>。不用记名字，<span class="td-ok">只问基材供应商+环保等级报告</span>。</td></tr>
+        <tr><td><b>负离子板 / 净醛抗菌板</b></td><td><span class="td-bad">功能添加话术</span>。有业主花3000元升级"净醛板"，实测甲醛与普通ENF颗粒板无异。</td></tr>
+        <tr><td><b>无甲醛板</b></td><td>不存在。木材本身含微量甲醛，规范表述只能叫<b>"无醛添加"</b>（指胶水不用含醛树脂）。</td></tr>
+      </table>
+    </div>
+    <div class="card"><h5>✅ 只认两个硬指标</h5>
+      <p style="margin-bottom:10px;color:var(--gray);font-size:14.5px;">2026年行业共识：<b>买板材只看下面两样，名字一律当背景音。</b></p>
+      <p style="margin-bottom:8px;">① <b>基材品牌与产地</b>（例：万华禾香、大亚、露水河、爱格EGGER Austria）——写进合同，注明"假一赔十"。</p>
+      <p style="margin-bottom:8px;">② <b>环保等级报告</b>：国标 ENF / E0（GB/T 39600-2021）或日本F★★★★，要看<b>带CMA/CNAS章的检测报告原件照片</b>，报告编号官网可查。</p>
+      <div class="note tip" style="margin-bottom:0;"><b>验收硬招</b>：合同写明"到场板材须保留侧边钢印/喷码，业主可拍照与报告核对批次"；进口板可要求出示当批次报关单。</div>
+    </div>
+  </div>
+
+  <h3 class="sub-title">九种基材全家福（均为 18mm · 1220×2440mm 标准张，2026华东行情参考）</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:120px;">基材</th><th>一句话本质</th><th>优点</th><th>缺点</th><th>价格/张</th><th style="width:170px;">怎么用它</th></tr></thead>
+      <tbody>
+        <tr><td><b>实木拼板</b><small>直拼/指接</small></td><td>整木锯成条再胶拼</td><td>质感最好、可翻新打磨</td><td class="td-bad">贵；对含水率极敏感，易开裂变形</td><td class="price">松木 380-600<br>橡木 900-1600</td><td>高端柜门、桌面点缀；全屋少用</td></tr>
+        <tr><td><b>细木工板</b><small>生态板芯/马六甲芯</small></td><td>木条拼芯+上下覆单板</td><td>握钉力好、木工好加工</td><td class="td-bad">稳定性看木工手艺，工厂定制很少用</td><td class="price">150-300</td><td>基本只用于木工现场打柜</td></tr>
+        <tr><td><b>多层实木板</b><small>胶合板</small></td><td>奇数层单板纵横胶压</td><td class="td-ok">防潮最好、握钉力强、不易变形</td><td>胶水用量最大、环保水平参差；难做造型</td><td class="price">130-260</td><td>橱柜柜体、水槽柜、浴室柜首选</td></tr>
+        <tr><td><b>颗粒板</b><small>刨花板</small></td><td>木碎料+胶热压</td><td class="td-ok">便宜稳定不易变形、适合机器批量、花色最全</td><td>握钉力一般（拆装两次就松）；怕泡水</td><td class="price">普通 70-140<br>品牌ENF 130-260</td><td>卧室/客厅衣柜书柜主力，<b>90%家庭的答案</b></td></tr>
+        <tr><td><b>禾香板</b><small>万华生态为代表</small></td><td>秸秆/木纤维+MDI胶</td><td class="td-ok">胶水本身无醛，出厂即ENF级；防潮略好</td><td>比普通颗粒板贵4-6成；假"禾香"多</td><td class="price">160-300</td><td>儿童房、卧室量大时首选，认准万华授权</td></tr>
+        <tr><td><b>欧松板 OSB</b><small>含"均质欧松板"新品类</small></td><td>大刨片定向铺装；均质款（如华富立柠芯板，柠檬桉芯）结构更细密均匀</td><td>强度高、常见E0以上、有木片肌理感；均质款表面细腻可做门板</td><td>颜值两极分化；握钉一般；普通款表面粗，深造型要用均质款</td><td class="price">普通 110-170<br>均质款 200-300</td><td>背景墙、日式/工业风裸板；均质款可做造型/吸塑门基材</td></tr>
+        <tr><td><b>密度板 MDF</b><small>中纤板</small></td><td>木纤维+胶高压成型</td><td class="td-ok">表面最细腻，可铣造型</td><td class="td-bad">怕潮（泡水就废）、握钉最弱、胶多</td><td class="price">90-160</td><td>造型门板（模压/烤漆）的基材，绕不开</td></tr>
+        <tr><td><b>进口颗粒板</b><small>爱格/克诺斯邦/芬萨</small></td><td>欧洲产线颗粒板</td><td class="td-ok">花色领先全球、批次稳定、F4星+ENF双认证</td><td>贵3-6成；假货多，必须授权渠道</td><td class="price">300-450<br>（随汇率物流波动）</td><td>预算充足，追求单色肤感高级效果</td></tr>
+        <tr><td><b>不锈钢柜体</b></td><td>304/201钢柜体</td><td>永不发霉、防水火</td><td class="td-bad">冰冷感、易划伤、贵、造型单一</td><td class="price">按柜计价</td><td>开放式厨房水槽柜、极湿环境局部</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note tip"><b>区域使用策略（照抄不走样）</b>卧室/客厅干燥区：颗粒板（ENF 或 E0）够用还省钱；厨房橱柜柜体：多层板或不锈钢铁皮+水槽柜铝箔防潮；浴室柜：多层板+防水工艺，或不锈钢；<b>密度板永远不要用在潮湿区</b>。别被"多层板升级"话术多收钱——多层防潮好但环保并不更优（胶更多）。</div>
+
+  <h3 class="sub-title">板材品牌金字塔：知道名字，也知道怎么验</h3>
+  <div class="card">
+    <div class="pyramid">
+      <div class="pyr-row"><div class="pyr-bar"><span class="pyr-lv">TIER 1 · 进口标杆</span><div class="pyr-name">爱格 EGGER（奥地利）</div><div class="pyr-note">克诺斯邦、芬萨FINSA、可丽芙CLEAF（饰面）· 花色与批次稳定性全球标杆</div></div></div>
+      <div class="pyr-row"><div class="pyr-bar"><span class="pyr-lv">TIER 2 · 国产头部</span><div class="pyr-name">万华禾香 · 大亚 · 露水河</div><div class="pyr-note">兔宝宝 · 莫干山 · 千年舟 · 华富立（柠芯板/多层板，MDI无醛，ENF+F4星双认证）· 报告齐全，国产ENF主力</div></div></div>
+      <div class="pyr-row"><div class="pyr-bar"><span class="pyr-lv">TIER 3 · 品牌自有板</span><div class="pyr-name">康纯板（索菲亚）等注册商标</div><div class="pyr-note">多为TIER 2大厂代工基材+品牌压贴取名 · 质量通常不差，但要看报告不看名字</div></div></div>
+      <div class="pyr-row"><div class="pyr-bar"><span class="pyr-lv">TIER 4 · 白牌/小厂</span><div class="pyr-name">产地批发板</div><div class="pyr-note">价格优势的来源，品质抽奖 · 低价套餐常用，必须索要批次检测报告</div></div></div>
+    </div>
+    <div class="grid3" style="margin-top:16px;">
+      <div class="note info" style="margin:0;"><b>爱格验真 4 件事</b>爱格官方授权商名录可查；板材侧面有激光喷码；授权书核对有效期；部分批次可验报关单。上海市场爱格定制落地价约 <b>1100-1800元/㎡投影</b>，明显低于1000的要警惕。</div>
+      <div class="note tip" style="margin:0;"><b>国产板这样问</b>"基材是哪家的？"→ 答"自家工厂"的，追问工厂名+报告编号。大亚/露水河/禾香板/华富立都有标识，业主可拍照留证。</div>
+      <div class="note warn" style="margin:0;"><b>一句话决策</b>预算紧：国产ENF颗粒板；预算中上：进口板或禾香板；想要"奶油感高级单色"：直接奔爱格/可丽芙级别的饰面粉库。</div>
+    </div>
+  </div>
+
+  <h3 class="sub-title">点名材料解读：华富立柠芯板 / 吸塑欧松板骨架线门 / 华富立多层板</h3>
+  <p class="sec-lead">商家报出这三个名字时，按下面逐条对照——这套组合的<b>环保基本盘、风格属性、价格位置、验收要点</b>一页看全。</p>
+
+  <div class="card">
+    <h5>🏷️ 先认识品牌：华富立是谁</h5>
+    <p style="font-size:14.5px;color:var(--gray);">广东东莞板业品牌，国家级专精特新"小巨人"企业，自有 <b>CNAS 认可实验室</b>；产品主线是<b>无醛添加 MDI 胶 + 进口饰面纸</b>（德国夏特/特西诺采）+ 进口钢板压贴，基材通过<b>国标 ENF 与日本 F★★★★ 双认证</b>；配套的<b>激光封边条</b>是其强项（入选广东省名优高新技术产品）。市场定位一句话：<b>按进口板的环保水准卖国产价格——比杂牌贵一档、比爱格便宜一档</b>，主要走工厂店与定制渠道。</p>
+  </div>
+
+  <div class="grid3">
+    <div class="card">
+      <h5>🟡 华富立柠芯板 <span class="badge b-amber">门板选项</span></h5>
+      <p style="font-size:14px;"><b>本质：</b>"<b>均质欧松板</b>"品类——澳洲进口<b>柠檬桉原木芯部</b>作原料，MDI 胶高温高压成型，再贴三聚氰胺浸渍纸精板。比普通 OSB 刨片更细、结构更均匀，<b>表面细腻度可胜任门板</b>。</p>
+      <table style="min-width:0;">
+        <tr><td style="width:64px;"><b>优点</b></td><td>柠檬桉硬重强韧、天然防潮抗腐（高温高湿树种出身）；MDI 胶起点即 ENF；F4星认定番号 <b>MFN-3776</b>；进口纸+进口钢板，批次色差近乎为零；高端线 EBH 微晶饰面（等离子喷涂+光固化，高硬度晶面）</td></tr>
+        <tr><td><b>注意</b></td><td>宣传的"柠檬桉油抑菌驱虫"——<b>当赠品听，别为它付费</b>（无消费级权威标准背书）；均质欧松板约 <span class="price">200-300/张</span>，比普通 OSB 贵一档，谈价按这个锚</td></tr>
+        <tr><td><b>适配</b></td><td>平板门/浅造型门均可；配华富立自家激光封边条效果最佳（问清是否标配）</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h5>🖼️ 吸塑欧松板骨架线门 <span class="badge b-amber">门板选项</span></h5>
+      <p style="font-size:14px;"><b>本质：</b>欧松板（或均质欧松板）基材铣出<b>边框式"骨架线"造型</b> → PVC/PET 膜真空吸塑<b>整体六面包覆</b>。</p>
+      <table style="min-width:0;">
+        <tr><td style="width:64px;"><b>优点</b></td><td>造型立体（奶油/轻法式的代表元素）；六面覆膜<b>无封边胶线</b>、防潮性好；出厂价低——欧松板造型吸塑门批发约 <span class="price">93-150/㎡</span>、零售工厂价百元/㎡量级（注意：这是门板出厂价，商家落地另算）</td></tr>
+        <tr><td><b>命门</b></td><td class="td-bad">膜决定寿命：国产膜白门 2-3 年黄变/起皮是经典翻车——认准<b>德国雷诺丽特</b>等进口膜写进合同；怕高温（灶台正面柜门慎用）；磕碰起皮没法修，只能整扇换</td></tr>
+        <tr><td><b>适配</b></td><td>骨架线=奶油/轻法式语言；平板=极简/包豪斯语言——<b>先定风格再定门</b></td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h5>🟤 华富立多层板 <span class="badge b-amber">柜体方案</span></h5>
+      <p style="font-size:14px;"><b>本质：</b>柠檬桉单板纵横交替胶压的<b>多层实木板</b>，做柜体基材。</p>
+      <table style="min-width:0;">
+        <tr><td style="width:64px;"><b>优点</b></td><td>多层板是柜体基材里<b>防潮与握钉力最稳</b>的一档——厨房、水槽柜、浴室柜尤其合适；MDI 无醛版本把多层板"胶多"的环保短板直接补齐（普通脲醛胶多层板才需要担心这一点）</td></tr>
+        <tr><td><b>注意</b></td><td>务必确认是 <b>MDI 无醛款（ENF 报告）</b>——选普通胶多层板就失去了多花钱的意义；价格比颗粒板柜体贵一档</td></tr>
+        <tr><td><b>验收</b></td><td>到场柜体板看侧面<b>喷码批次</b>与报告对应；水槽柜底板确认已覆铝箔</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note tip"><b>这套组合的三盘评分</b> ① <b>环保盘（优）</b>：全系 MDI 无醛 + ENF/F4星双认证，比"杂牌多层板+普通吸塑门"的组合强不少；② <b>结构盘（顺手）</b>：多层板柜体（防潮握钉）+ 均质欧松板门（刚性），用在厨房/潮区最顺；卧室客厅差异不大，看报价取舍；③ <b>价格盘（中段甜点）</b>：属于"进口板环保、国产板价格"的中间层，值得与爱格方案同口径比一轮总价再定。</div>
+
+  <div class="note warn"><b>签约核对 4 条（针对这组材料）</b> ① ENF 报告 + F4星认定番号（MFN-3776）出示原件照片，与到场板材<b>批次喷码对应</b>；② 吸塑膜<b>品牌+厚度写死</b>（雷诺丽特等），要求看样门切角验证六面包覆，白色门追加"抗黄变承诺"；③ 平板柠芯板门问清<b>激光封边条是否标配</b>、柜体多层板确认 MDI 版本；④ 吸塑造型门按"扇"还是"㎡"计价、超重门是否另收安装费——写进配置清单。</div>
+
+</section>
+
+<!-- ================= 第2章 环保 ================= -->
+<section id="s2">
+  <div class="sec-head"><span class="no">02</span><h2>环保等级：数字、标准与话术</h2><span class="en">Eco Standards</span></div>
+  <p class="sec-lead">全屋定制是甲醛叠加的大头（柜体用量大），这是唯一不能省钱的地方之一。但也不需要交"智商税"——<b>只认国标数字和报告，其余都是空气。</b></p>
+
+  <div class="card">
+    <h5>📊 一张表看懂所有等级（国标为气候箱法 1m³，单位 mg/m³）</h5>
+    <div class="tbl-wrap" style="margin-bottom:0;">
+      <table>
+        <thead><tr><th>等级 / 标准</th><th>甲醛限值</th><th>法律效力</th><th>怎么理解</th><th>建议用法</th></tr></thead>
+        <tbody>
+          <tr><td><b>E1</b><small>GB/T 39600-2021</small></td><td>≤0.124</td><td><span class="badge b-gray">基准线</span></td><td class="td-bad">2026年6月起已不是市场通行证</td><td>不作为卖点，只作为底线</td></tr>
+          <tr><td><b>E0</b><small>GB/T 39600-2021</small></td><td><b>≤0.050</b></td><td><span class="badge b-blue">强制新国标</span><small>GB 18580-2025（2026.6.1实施）</small></td><td>市售人造板必须达到的准入线</td><td>全屋大面积打柜的合格起点</td></tr>
+          <tr><td><b>ENF</b><small>GB/T 39600-2021</small></td><td class="td-ok"><b>≤0.025</b></td><td><span class="badge b-green">现行国标最高</span></td><td>数值是E0的一半</td><td>卧室、儿童房、柜子密集空间优选</td></tr>
+          <tr><td><b>F★★★★</b><small>日本JIS</small></td><td>干燥器法口径<small>≤0.3 mg/L</small></td><td><span class="badge b-purple">海外标准</span></td><td>检测方法不同，<b>数值不能与国标直接换算</b></td><td>进口板常带的加分项</td></tr>
+          <tr><td><b>NAF / CARB P2</b><small>美国加州</small></td><td>无醛添加认证</td><td><span class="badge b-purple">海外标准</span></td><td>胶水体系认证</td><td>进口板参考，非必须</td></tr>
+          <tr><td><b>HENF 采暖无醛</b></td><td>30℃高温工况检测</td><td><span class="badge b-amber">企标/宣传为主</span></td><td>高温下更严，方向是好的</td><td>有报告就看编号，没有=仅话术</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h5>⚖️ 关键概念：承载量（比等级更容易翻车的点）</h5>
+      <p style="font-size:14.5px;color:var(--gray);">等级是"<b>单张板</b>"的释放量限值，而你住的是"<b>整个房间</b>"的叠加结果。</p>
+      <p style="font-size:14.5px;color:var(--gray);margin-top:8px;">一个 12㎡ 卧室做一整面通顶衣柜+飘窗柜（展开面积约 25㎡），即使全用 E0 板，释放总量也可能超过同样板材只做一个床头柜的房间。<b>柜子越多、空间越小，越应该买高等级板。</b></p>
+      <div class="note tip" style="margin-bottom:0;"><b>实操结论</b>：卧室/儿童房 → ENF 起步；玄关/客厅/阳台柜 → E0 够用；用胶大户（密度板造型门）集中在通风好的区域。</div>
+    </div>
+    <div class="card">
+      <h5>🔍 检测报告 6 条军规</h5>
+      <table style="min-width:0;">
+        <tr><td>① 章</td><td>必须 CMA 或 CNAS 章，<b>缺章=废纸</b></td></tr>
+        <tr><td>② 方法</td><td>看检测方法是否"1m³气候箱法"，穿孔萃取法数值不可比</td></tr>
+        <tr><td>③ 编号</td><td>编号可在检测机构官网查验真伪</td></tr>
+        <tr><td>④ 批次</td><td>报告对应生产批次，最好与到场板材喷码对应</td></tr>
+        <tr><td>⑤ 送检性质</td><td>注意"送检"≠"抽检"，抽检更有说服力</td></tr>
+        <tr><td>⑥ 时效</td><td>报告一般一年内有效，太旧的重新要</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note bad"><b>这些说法直接打断</b>"我们的板材比ENF还好"→ 让他出示更高等级的标准编号和报告，没有就是话术；"负离子净醛，主动分解甲醛"→ 目前无权威国标支撑其宣称效果，是否买单自己判断，但别为此加预算；"E0是最高标准"→ 国标最高是ENF，别被旧话术唬住（2026年6月后连E0都只是强制底线）。</div>
+</section>
+
+<!-- ================= 第3章 饰面封边 ================= -->
+<section id="s3">
+  <div class="sec-head"><span class="no">03</span><h2>饰面与封边：颜值与"会不会开边"的真相</h2><span class="en">Surface & Edge</span></div>
+  <p class="sec-lead">基材负责骨头，<b>饰面决定柜子"看起来值多少钱"，封边决定"三年后像不像出租房"</b>。这两层恰恰是低价套餐省钱最狠的地方。</p>
+
+  <h3 class="sub-title">七种饰面工艺对比（门板是差异化的大头）</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>工艺</th><th>是什么</th><th>效果 / 质感</th><th>耐用性</th><th>相对价格</th><th>适用建议</th></tr></thead>
+      <tbody>
+        <tr><td><b>三聚氰胺浸胶纸</b><small>俗称"免漆"</small></td><td>板厂预压浸胶装饰纸</td><td>布纹/木纹/单色，哑光实用</td><td>★★★☆ 耐磨看纸的品质</td><td class="td-ok">套餐标配（+0）</td><td>认进口纸（如夏特/英特普莱特），预算紧用它+PUR封边也不掉价</td></tr>
+        <tr><td><b>PET 膜压</b><small>肤感/高光</small></td><td>0.3mm+聚酯膜贴合</td><td class="td-ok">★★★★★ 肤感顺滑，奶油/包豪斯风核心</td><td>★★★★ 耐刮耐污好打理</td><td class="price">每张板 +80-150</td><td>2026最主流的升级项，<b>注意防"PVC仿PET"</b><small>真PET膜厚≥0.35mm，可要求切口样品验证</small></td></tr>
+        <tr><td><b>亚克力</b><small>PMMA</small></td><td>浇铸/挤出板贴合</td><td>★★★★★ 最亮的高光镜面</td><td>★★★ 怕划、指纹明显</td><td class="price">每张板 +100-250</td><td>小面积点缀（玄关柜/展示位），大面积慎重</td></tr>
+        <tr><td><b>吸塑模压</b><small>真空覆膜</small></td><td>基材铣型后真空覆膜；基材有<b>密度板</b>与<b>欧松板</b>两条路线（后者环保、刚性更好）</td><td>★★★★ 立体造型（骨架线/法式线条）</td><td>★★☆ 膜怕高温易黄变（国产膜重灾区），近灶慎用；磕碰起皮难修</td><td class="price">+30-80/张板<br>欧松板造型门出厂 93-150/㎡</td><td>造型门性价比之选；膜认准德国雷诺丽特并写进合同；白色门重点问抗黄变</td></tr>
+        <tr><td><b>烤漆</b></td><td>密度板喷漆烘烤</td><td>★★★★★ 质感天花板</td><td class="td-bad">★★ 怕磕碰，掉漆难补</td><td class="price">每投影 +200-600</td><td>精致厨房/高端衣帽间，过日子族慎选</td></tr>
+        <tr><td><b>实木贴皮</b></td><td>基材+天然木皮+漆</td><td>★★★★★ 静奢质感</td><td>★★★★ 需保养</td><td class="price">昂贵</td><td>高定/中式/复古风，重工艺设计</td></tr>
+        <tr><td><b>玻璃门</b><small>铝框/无框</small></td><td>柜门换玻璃+铝型材</td><td>★★★★ 展示效果+灯带绝配</td><td>★★★★ 记得选防爆膜</td><td class="price">1200-2000/㎡门</td><td>点缀使用（餐边柜展示区），全屋玻璃=指纹地狱</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub-title">封边三代工艺：最容易被忽略、最影响寿命</h3>
+  <div class="grid3">
+    <div class="card" style="border-top:4px solid #B4BFD1;"><h5>1️⃣ EVA 热熔胶封边 <span class="badge b-gray">过去式</span></h5>
+      <p style="font-size:14px;color:var(--gray);">传统工艺。<b>胶线粗（0.2mm+），深色板上像黑边</b>；耐温耐湿差，三五年后厨柜门边易开裂积灰。低价套餐和木工打柜的标配。</p></div>
+    <div class="card" style="border-top:4px solid var(--blue);"><h5>2️⃣ PUR 反应型热熔胶 <span class="badge b-blue">2026主流推荐</span></h5>
+      <p style="font-size:14px;color:var(--gray);">胶水发泡原理固化，<b>胶线细、耐高温高湿、不老化开裂</b>。比EVA成本高约 <span class="price">15-25元/延米</span>，折算每扇门贵几十元——<b>深色板和肤感板必配PUR，否则黑缝会毁掉质感</b>。升级费很值。</p></div>
+    <div class="card" style="border-top:4px solid #6D28D9;"><h5>3️⃣ 激光封边 <span class="badge b-purple">金字塔尖</span></h5>
+      <p style="font-size:14px;color:var(--gray);">封边带自带功能层，激光激活贴合，<b>视觉零胶线</b>、防水性最佳。需进口自动化产线（豪迈等），工厂门槛高，多为高端品牌与部分工厂店大货渠道拥有。</p></div>
+  </div>
+  <div class="grid2">
+    <div class="note tip" style="margin:0;"><b>现场鉴别封边 3 招</b>① 手指腹沿门板对角线边缘摸：有台阶感/刮手=EVA粗糙工艺；② 侧光看封边与板面交界：一条明显色线=胶线粗；③ 深色或肤感门板重点看门上下两端头（最易开边处）是否平整无黑线。</div>
+    <div class="note warn" style="margin:0;"><b>封边带本身也分等级</b>：要求 1.5-2.0mm 同色 ABS/PVC 封边带，带背面带热熔胶层的国产一线或进口带。0.8mm 薄带易崩口。合同写明"封边带厚度≥1.5mm"。</div>
+  </div>
+
+</section>
+
+<!-- ================= 第4章 五金 ================= -->
+<section id="s4">
+  <div class="sec-head"><span class="no">04</span><h2>五金：天天摸十年的东西，别在出厂就缩水</h2><span class="en">Hardware</span></div>
+  <p class="sec-lead">柜子好不好用，五年后五金说了算。<b>五金占整柜成本约15%，却是低价套餐"隐形降配"第一大区</b>——套餐常配无品牌或杂牌铰链，一年后柜门下沉、阻尼失效。</p>
+
+  <h3 class="sub-title">铰链：品牌梯队与真实价格（带阻尼款，2026）</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>品牌</th><th>产地</th><th>单价/只</th><th>特点</th><th>适合</th></tr></thead>
+      <tbody>
+        <tr><td><b>百隆 Blum</b></td><td>奥地利</td><td class="price">30-65</td><td>阻尼顺滑度与耐久标杆（10万次+开合），CLIP top系列可快拆</td><td>全屋顶配、高端灶台高温环境稳</td></tr>
+        <tr><td><b>海蒂诗 Hettich</b></td><td>德国</td><td class="price">25-50</td><td>结构强度好，滑轨系尤其强</td><td>橱房高频件</td></tr>
+        <tr><td><b>格拉斯 Grass</b> / 萨郦奇 Salice</td><td>奥地利/意大利</td><td class="price">40-80</td><td>高定橱柜标配、快拆结构</td><td>预算充足的点睛件</td></tr>
+        <tr><td><b>DTC 东泰</b></td><td>广东·国产头部</td><td class="price">7-25</td><td>国产性价比第一梯队，大牌副牌常采</td><td><b>绝大多数家庭的甜点位</b></td></tr>
+        <tr><td><b>悍高 / 汇泰龙 / 坚朗</b></td><td>广东</td><td class="price">6-20</td><td>悍高拉篮强、汇泰龙整体配套全</td><td>配拉篮/升级件务实之选</td></tr>
+        <tr><td><b>无标/杂牌</b></td><td>—</td><td class="price">2-5</td><td class="td-bad">一年后柜门下垂、阻尼异响主力</td><td class="td-bad">出现在报价里就要求换掉</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid3">
+    <div class="note info" style="margin:0;"><b>数量怎么算不被坑</b>门高≤0.9m → 2只；0.9~1.6m → 3只；1.6~2.0m → 4只；>2.0m → 5只+拉直器。装完数螺丝孔，<b>少装铰链是隐形降配</b>。</div>
+    <div class="note info" style="margin:0;"><b>潮湿区注意</b>水槽柜、浴室柜要<b>304不锈钢铰链</b>（冷轧镀镍会锈）；厨房高温区选耐温等级高的进口款。</div>
+    <div class="note warn" style="margin:0;"><b>"进口五金"防假</b>安装时看包装纸盒、铰链本体钢印与批次码。<b>合同按型号写死</b>（例：Blum CLIP top 71B3550），口头承诺"原装进口"必查。</div>
+  </div>
+
+  <h3 class="sub-title">导轨与抽屉：套餐省钱的第二战场</h3>
+  <div class="grid2">
+    <div class="card"><h5>📦 抽屉的三条鄙视链</h5>
+      <table style="min-width:0;">
+        <tr><td><b>三节静音滑轨</b></td><td>标配。承重一般，十年后偏涩。滑轨成本 20-60/套</td></tr>
+        <tr><td><b>骑马抽（二节/钢抽）</b></td><td class="td-ok">抽盒一体焊接、推拉稳、承重 30kg+，体验差异肉眼可辨</td></tr>
+        <tr><td><b>进口骑马抽</b><small>百隆LEGRABOX/海蒂诗ArciTech</small></td><td class="td-ok">顺滑+可调+承重体验顶配，<span class="price">300-700/个</span></td></tr>
+      </table>
+      <p style="font-size:13.5px;color:var(--gray);margin-top:8px;">国产骑马抽（DTC等）约 <b>120-300/个</b>，是"花小钱办大事"的典型升级。</p></div>
+    <div class="card"><h5>⚙️ 功能五金的值与不值</h5>
+      <table style="min-width:0;">
+        <tr><td><b>拉直器</b></td><td>门高＞2.0/2.4m 必装（开门会弓）。<span class="price">80-200/根</span>，90%商家签合同前不提 → 图纸阶段自己数好通高门扇数谈进套餐。</td></tr>
+        <tr><td><b>气撑/随意停</b></td><td>上翻门必备。液压随意停体验最好，<span class="price">80-200/支</span>；通高电动柜门另说，属玩具级预算。</td></tr>
+        <tr><td><b>拉篮</b></td><td>悍高、诺米、凯斯宝玛（德系贵）。<b>转角飞碟/小怪物慎买</b>——好看难清、故障率高；调味拉篮+阻尼抽放米面，实用。</td></tr>
+        <tr><td><b>感应灯带</b></td><td>手扫感应>门磁感应。橱柜吊柜底、衣柜挂衣区值得；<span class="price">全屋 3000-6000</span>（可让水电代装插座式，省一半）。</td></tr>
+        <tr><td><b>吊码</b></td><td>吊柜承重命根。要求<b>隐形钢吊码</b>（承重70kg+），明装吊码+木塞=3年后柜子下垂隐患。</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note tip"><b>加钱优先级（数据说话的实用主义排序）</b>① 铰链全屋至少国产一线DTC带阻尼 <b>[必加]</b> → ② 抽屉从三节轨升级骑马抽（衣柜+厨柜重点抽屉）<b>[强烈建议]</b> → ③ PUR封边升级 <b>[强烈建议]</b> → ④ 水槽柜不锈钢铰链 <b>[厨房必加]</b> → ⑤ 高频重柜门（岛台、通高门）局部上百隆 <b>[按需]</b> → ⑥ 全进口五金全家桶 <b>[预算充足再说，全屋差价1500-3000]</b> → ⑦ 转角小怪物/电动升降 <b>[劝退]</b>。</div>
+</section>
+
+<!-- ================= 第5章 辅料结构 ================= -->
+<section id="s5">
+  <div class="sec-head"><span class="no">05</span><h2>辅料与结构：看不见的地方决定下限</h2><span class="en">Structure</span></div>
+  <p class="sec-lead">这一章全是"报价单上不主动写、结算时变增项"的东西。<b>逐条过，逐条写进合同，是普通业主和精明业主的分水岭。</b></p>
+
+  <div class="grid2">
+    <div class="card">
+      <h5>🧱 背板：套餐默认5mm，这是行业的公开秘密</h5>
+      <table style="min-width:0;">
+        <tr><td><b>5mm 薄背板</b></td><td class="td-bad">易变形、柜体易晃、敲着空、不隔音不隔热，挂在墙上的柜子背板就是受力面</td></tr>
+        <tr><td><b>9mm</b></td><td class="td-ok">性价比甜点位，<b>直接要求默认9mm</b>，升级费约 <span class="price">40-90/㎡投影</span></td></tr>
+        <tr><td><b>18mm</b></td><td class="td-ok">柜深＞600mm、超长柜、要挂重物（洞洞板/梁）时上</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h5>📐 见光板：漏报重灾区</h5>
+      <p style="font-size:14px;color:var(--gray);">柜子<b>外侧板和顶面露出来的部分</b>，用基础板=侧脸"素颜"，要跟门板同色就必须加"见光板"（薄的一层饰面板）。典型加价 <span class="price">500-800/㎡</span>。真实案例：有业主全爱格990/㎡套餐最终落地2000+，仅见光板一项就吃了 <b>19.72㎡×600+</b>。</p>
+      <div class="note tip" style="margin-bottom:0;margin-top:8px;"><b>破解</b>：图纸确认时标注哪些面见光，让商家<b>打包进柜体单价</b>，别按㎡单算。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5>🧩 结构辅料对照表（对图逐项勾）</h5>
+    <div class="tbl-wrap" style="margin-bottom:0;">
+      <table>
+        <thead><tr><th style="width:130px;">项目</th><th>作用</th><th>常见收费</th><th>避坑动作</th></tr></thead>
+        <tbody>
+          <tr><td><b>顶封板/底封板</b></td><td>柜体与顶面/地面找平过渡</td><td class="price">100-200/块</td><td>属于柜体一部分，<b>打包进柜价</b></td></tr>
+          <tr><td><b>调整条/收口条</b></td><td>墙不垂直的填缝过渡</td><td class="price">100-200/延米</td><td>老房子墙歪的多，图纸阶段量好，写进合同</td></tr>
+          <tr><td><b>踢脚线/前挡</b></td><td>柜底防踢防潮</td><td class="price">80-150/延米</td><td>要求与柜体同色PVC或铝制</td></tr>
+          <tr><td><b>罗马柱/造型顶线</b></td><td>法式/美式装饰线</td><td class="price">150-400/延米</td><td>极简/包豪斯直接不做，省钱又对味</td></tr>
+          <tr><td><b>层板加厚/前口</b></td><td>25mm层板+圆弧前口更好看</td><td class="price">+80-150/块</td><td>展示位加，收纳位不必</td></tr>
+          <tr><td><b>台面垫板</b></td><td>石英石/岩板下的支撑</td><td class="price">+60-100/延米</td><td><b>整垫板优于垫条</b>（抗开裂），橱柜必查</td></tr>
+          <tr><td><b>水槽柜防水</b></td><td>底板铝箔/防水垫</td><td class="price">+80-150</td><td>水槽柜必做，不做=两年起鼓</td></tr>
+          <tr><td><b>玻璃胶</b></td><td>台面靠墙、柜体贴墙封缝</td><td class="price">0-300</td><td>指定<b>防霉型</b>（道康宁/德高等），普通胶半年发黑</td></tr>
+          <tr><td><b>检修口/活动背板</b></td><td>遮挡水电表箱、阀门</td><td class="price">+100-200/处</td><td>有强弱电箱/水阀处必设</td></tr>
+          <tr><td><b>灯带开槽/电源引出</b></td><td>层板灯走线</td><td class="price">+30-60/米</td><td>电位图阶段和水电工对齐，别让柜厂重复收费</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= 第6章 计价增项 ================= -->
+<section id="s6">
+  <div class="sec-head"><span class="no">06</span><h2>计价方式与增项拆解：从"门票"到"总价"</h2><span class="en">Pricing</span></div>
+  <p class="sec-lead">这是全站最重要的一章。<b>2026年行业投诉超六成源于合同外增项</b>。学会把"广告套餐价"还原成"落地总价"，你已经赢过90%的业主。</p>
+
+  <div class="card">
+    <h5>📐 投影面积 vs 展开面积：一个例子算明白</h5>
+    <p style="color:var(--gray);font-size:14px;margin-bottom:12px;">以一个 <b>W1200 × D600 × H2400 经典衣柜</b> 为例：</p>
+    <div class="grid2">
+      <table style="min-width:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;">
+        <tr><td colspan="2" style="background:#EDF3FF;font-weight:800;color:var(--blue-deep);">投影面积计价</td></tr>
+        <tr><td>算法</td><td>柜体正立面：<b>1.2 × 2.4 = 2.88㎡</b></td></tr>
+        <tr><td>含义</td><td>这 2.88㎡ 里通常"含"：柜体+基础层板（每延米1-3块）+1根衣通+<b>不含</b>或单算的门板（口径各家不同！）+基础铰链滑轨</td></tr>
+        <tr><td>陷阱</td><td class="td-bad">"投影价七百八"——门板、抽屉、见光通通另算；内部隔板加一块都是钱</td></tr>
+      </table>
+      <table style="min-width:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;">
+        <tr><td colspan="2" style="background:#EDF3FF;font-weight:800;color:var(--blue-deep);">展开面积计价</td></tr>
+        <tr><td>算法</td><td>侧板、顶底、层板、背板、门板<b>每块板材展开算钱再相加</b>，本例展开约 8-10㎡（≈投影的 2.8~3.5 倍）</td></tr>
+        <tr><td>含义</td><td>更像买原材料，结构越复杂总价越高，适合"柜子结构我定了不再改"的场景</td></tr>
+        <tr><td>陷阱</td><td class="td-bad">核对困难：小板重复计、背板按18mm算却装5mm，业主根本数不清</td></tr>
+      </table>
+    </div>
+    <div class="note info" style="margin-top:12px;margin-bottom:0;"><b>换算心法</b>：问商家要"同样图纸、同口径（含门板、含3层板、含1抽屉）的双口径报价"，用<b>总价÷投影面积</b>得出真实单价再横向对比，别被单价表面数字迷惑。展开价 × 0.3 ≈ 投影价（大致换算，越复杂系数越高）。</div>
+  </div>
+
+  <div class="card">
+    <h5>🎪 "499 / 799 / 990 套餐"含什么、不含什么（对照模板）</h5>
+    <div class="grid2">
+      <table style="min-width:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;">
+        <tr><td colspan="2" style="background:var(--ok-bg);font-weight:800;color:var(--ok);">✅ 套餐价一般包含</td></tr>
+        <tr><td>柜体基材</td><td>18mm 颗粒板（E0/E1级），柜深通常 ≤560-600mm</td></tr>
+        <tr><td>配套门板</td><td>限定几款单色免漆门，<b>门高通常 ≤2.0m</b>（超2.4m=非标）</td></tr>
+        <tr><td>基础内饰</td><td>每 3-5㎡ 投影送 1 抽屉；每米柜体 1-3 块层板 + 衣通</td></tr>
+        <tr><td>基础五金</td><td>无标或国产基础铰链/三节轨（<b>多不带阻尼</b>）</td></tr>
+        <tr><td>服务</td><td>量房、基础设计图、安装（部分含运输上楼，需确认）</td></tr>
+      </table>
+      <table style="min-width:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;">
+        <tr><td colspan="2" style="background:var(--bad-bg);font-weight:800;color:var(--bad);">❌ 套餐价通常不包含</td></tr>
+        <tr><td>见光板</td><td>柜外加装，500-800/㎡</td></tr>
+        <tr><td>阻尼/进口五金</td><td>升级 40-120/只、骑马抽 150-800/个</td></tr>
+        <tr><td>超量抽屉</td><td>300-600/个</td></tr>
+        <tr><td>非标尺寸</td><td>超高、超深、异形 +10-30%</td></tr>
+        <tr><td>拉直器</td><td>80-200/根（签前不提，安装前才告知）</td></tr>
+        <tr><td>灯带/玻璃门</td><td>3000-6000 / 1200-2000㎡</td></tr>
+        <tr><td>各种辅材</td><td>背板升级、调整条、拆旧、上楼</td></tr>
+      </table>
+    </div>
+    <div class="note bad" style="margin-top:12px;margin-bottom:0;"><b>真实案例复盘（2026·成都）</b>：业主按全爱格 990元/㎡ 套餐下单，落地单价干到 <b>2000+/㎡</b>。拆开看：柜体25.41㎡就花49778元，见光板19.72㎡按600+/㎡再收一万多，加上抽屉、铰链升级、灯带——<b>套餐是门票，增项才是正片</b>。</div>
+  </div>
+
+  <h3 class="sub-title">2026 增项全表：逐条对图勾选，写进合同</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:150px;">增项</th><th>何时触发</th><th>常见价位</th><th>破解方法</th></tr></thead>
+      <tbody>
+        <tr><td><b>超量抽屉</b></td><td>想要实际好用的收纳（衣柜叠放、厨柜储物都烧抽屉）</td><td class="price">300-600/个</td><td>按 240-380 砍；总量在图纸阶段一次谈定</td></tr>
+        <tr><td><b>见光板</b></td><td>柜体侧/顶面对外可见</td><td class="price">500-800/㎡</td><td>标注范围打包进柜体单价</td></tr>
+        <tr><td><b>拉直器</b></td><td>一门到顶（门高＞2.0/2.4m）</td><td class="price">80-200/根</td><td>锁门扇数量进套餐</td></tr>
+        <tr><td><b>背板升级</b></td><td>5mm → 9mm</td><td class="price">40-90/㎡投影</td><td>要求9mm为默认配置</td></tr>
+        <tr><td><b>阻尼/品牌五金</b></td><td>换DTC/百隆</td><td class="price">40-120/只</td><td>写明品牌型号；全屋差价议成固定包干</td></tr>
+        <tr><td><b>骑马抽</b></td><td>换抽屉结构</td><td class="price">150-800/个</td><td>重点柜位升级，非全屋</td></tr>
+        <tr><td><b>玻璃门/铝框</b></td><td>展示位</td><td class="price">1200-2000/㎡门</td><td>小面积点缀即可</td></tr>
+        <tr><td><b>灯带+变压器</b></td><td>氛围光</td><td class="price">3000-6000/全屋</td><td>电位期+水电协作；或选充电感应灯（免布线但常充电烦）</td></tr>
+        <tr><td><b>非标尺寸</b></td><td>柜高＞2400、深＞600、异形切角</td><td class="price">+10-30%</td><td><b>分体柜设计</b>：2400以上拆顶柜+封板，规避非标</td></tr>
+        <tr><td><b>罗马柱/顶线</b></td><td>风格造型</td><td class="price">150-400/延米</td><td>极简风不做，直接省</td></tr>
+        <tr><td><b>调整条/封板</b></td><td>老房墙不平（上海老房常态）</td><td class="price">100-200/块</td><td>归并入柜体总价</td></tr>
+        <tr><td><b>运输+上楼+安装</b></td><td>超长件、无电梯、夜间施工</td><td class="price">全屋500-3000</td><td>合同写明全包</td></tr>
+        <tr><td><b>旧柜拆除/移位</b></td><td>翻新住宅</td><td class="price">100-300/延米</td><td>自行找拆除队或让装修总包承担</td></tr>
+        <tr><td><b>开孔切角</b></td><td>电器柜插座、台面水槽灶位开孔</td><td class="price">50-300/孔</td><td>电位图定稿后一次算清</td></tr>
+        <tr><td><b>设计师上门深化费</b></td><td>多次改图、复尺</td><td class="price">0-1500</td><td>签约前约定免费改图次数（2-3次）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub-title">真实价格带宽：每投影单价从哪儿到哪儿（2026 华东）</h3>
+  <div class="card">
+    <div class="price-band">
+      <div class="pb-row"><div class="pb-lbl">木工现场打<br><small>生态板+人工</small></div><div class="pb-track"><div class="pb-bar" style="left:15%;width:30%;background:#BFE8D5;">900-1400 元/㎡</div></div></div>
+      <div class="pb-row"><div class="pb-lbl">上市子品牌普惠套餐<br><small>颗粒板ENF+基础五金</small></div><div class="pb-track"><div class="pb-bar" style="left:8%;width:23%;background:#D9F0E4;">500-800 元/㎡</div></div></div>
+      <div class="pb-row"><div class="pb-lbl">本地工厂店·国产板</div><div class="pb-track"><div class="pb-bar" style="left:18%;width:28%;background:#CFE6FF;">800-1300 元/㎡</div></div></div>
+      <div class="pb-row"><div class="pb-lbl">全国品牌主系列</div><div class="pb-track"><div class="pb-bar" style="left:28%;width:24%;background:#9CBDF7;">1000-1500 元/㎡</div></div></div>
+      <div class="pb-row"><div class="pb-lbl">工厂店·进口板<br><small>爱格等</small></div><div class="pb-track"><div class="pb-bar" style="left:33%;width:25%;background:#7FA8F5;">1100-1800 元/㎡</div></div></div>
+      <div class="pb-row"><div class="pb-lbl">品牌进口线/高定入门</div><div class="pb-track"><div class="pb-bar" style="left:55%;width:30%;background:#FFDC9A;">1800-3200 元/㎡</div></div></div>
+      <div class="pb-row"><div class="pb-lbl">高定工作室<br><small>威法/图森/木里木外</small></div><div class="pb-track"><div class="pb-bar" style="left:75%;width:25%;background:#F5B9B9;">3000-5000+ 元/㎡</div></div></div>
+    </div>
+    <div class="note info" style="margin-bottom:0;"><b>怎么读这张图</b>：① "进口板工厂店"可以比"国产大牌主系列"还便宜——<b>板子的钱和品牌的钱是两本账</b>；② 100平小三房全屋柜投影通常 35-55㎡，对应总预算大致 <b>3万~20万+</b>，区间完全取决于你在上图哪条带、增项怎么控制。</div>
+  </div>
+</section>
+
+<!-- ================= 第7章 商家渠道 ================= -->
+<section id="s7">
+  <div class="sec-head"><span class="no">07</span><h2>商家与渠道：五种玩法怎么选</h2><span class="en">Vendors</span></div>
+  <p class="sec-lead">同样一套图纸，不同渠道报价能差一倍。先想清楚<b>自己要什么（省心 / 性价比 / 效果天花板）</b>，再选渠道、再谈品牌。</p>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th style="width:150px;">渠道</th><th>价格带（投影）</th><th>优势</th><th>风险/短扳</th><th>适合谁</th></tr></thead>
+      <tbody>
+        <tr><td><b>🛠️ 木工现场打</b><small>生态板</small></td><td class="price">900-1400/㎡</td><td>材料眼见为实、尺寸灵活、可改</td><td class="td-bad">封边丑（手工条）、造型有限、好木工越来越难找且人工年年涨</td><td>结构简单的储物柜；信得过的老师傅</td></tr>
+        <tr><td><b>🏭 本地工厂店</b><small>白牌/授权代工</small></td><td class="price">国产 800-1300<br>爱格 1100-1800</td><td class="td-ok">同板便宜30-40%；进口板性价比之王；聊得来可完全定制</td><td>设计能力普遍弱；售后看老板人品；跑路风险要评估（看厂房+成立年限）</td><td>自己能出方案/有靠谱设计师；预算敏感但要好板</td></tr>
+        <tr><td><b>🏬 全国品牌主系列</b><small>欧派/索菲亚/志邦/金牌等</small></td><td class="price">1000-1500</td><td>设计流程标准化、安装队稳定、售后网络、大促让力</td><td>增项套路最多；设计师背KPI（往高客单导）；方案"套模板"感</td><td>怕麻烦、要一站式省心、预算中产</td></tr>
+        <tr><td><b>🏷️ 品牌普惠子品牌</b><small>菲思卡尔等</small></td><td class="price">499-799</td><td class="td-ok">上市体系背书、价格透明、ENF可达</td><td>款式少、配置低、升级项贵、门店精简</td><td>预算紧+接受基础款+能自控增项的人</td></tr>
+        <tr><td><b>✨ 高定/设计工作室</b><small>威法/图森/木里木外/RARA</small></td><td class="price">2500-5000+</td><td>设计天花板、五金进口化、激光封边工艺、木皮烤漆体系</td><td>贵；工期长；三分设计七分沟通</td><td>预算15万+/全屋；追求空间整体感</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h5>🗼 大众品牌速览（2026）</h5>
+      <table style="min-width:0;">
+        <tr><td><b>欧派</b></td><td>规模最大，橱柜起家；2026推普惠子品牌菲思卡尔（499起）抢市场</td></tr>
+        <tr><td><b>索菲亚</b></td><td>衣柜基本盘+康纯板(无醛添加)；收纳方案成熟；旗下米兰纳走性价比线</td></tr>
+        <tr><td><b>尚品宅配</b></td><td>全屋软件出图快、整家模式激进、价格弹性大</td></tr>
+        <tr><td><b>志邦 / 金牌</b></td><td>橱柜双强出身，厨柜五金件整合靠谱；整家跟进中</td></tr>
+        <tr><td><b>好莱客 / 我乐 / 皮阿诺 / 百得胜</b></td><td>二线梯队，各自有无醛板条线；百得胜无醛添加起家</td></tr>
+        <tr><td><b>林氏家居等</b></td><td>互联网品牌，价格激进，设计年轻化，售后深度看城市</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h5>📍 上海视角：去哪儿找</h5>
+      <table style="min-width:0;">
+        <tr><td><b>大卖场</b></td><td>红星美凯龙（真北/汶水等）、月星家居——<b>品牌全、可比价</b>，活动节点（315/618/双11/年末）折扣叠加，配套"卖场先行赔付"保障</td></tr>
+        <tr><td><b>设计街</b></td><td>宜山路一带设计/定制门市聚集（近年部分改造，前往先确认）；适合找工作室与小众品牌</td></tr>
+        <tr><td><b>工厂带</b></td><td>沪上工厂店多与<b>苏州、南通、嘉善、吴江、南浔</b>木业带代工关联，物流半径短、成本低；去看厂=眼见流水线与封边机（PUR/激光一目了然）</td></tr>
+        <tr><td><b>线上比价</b></td><td>小红书搜"城市名+爱格/禾香工厂店"避坑帖与报价帖，先建立本地心理价位再进店</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note bad"><b>2026 签约前的"生存三问"（行业动荡期特别版）</b>① 这家店是<b>直营还是加盟</b>？加盟店老板资金链风险怎么分担？（问总部要书面交付保障）② <b>定金付多少</b>？建议≤3000且写明"量尺出图后不满意可退"或"总价未确认定金可退"；绝不签"成品捆绑50%"条款。③ 万一门店歇业，<b>工厂订单与售后</b>由谁承接？——把这三问的回答落到合同里。</div>
+
+  <h3 class="sub-title">决策树：按预算直接对号</h3>
+  <div class="tree">
+    <div class="tree-row"><div class="tree-budget">全屋预算 &lt; 4万 <small>35-45㎡投影</small></div><div>普惠子品牌（499-799）或口碑工厂店国产ENF板：国产一线阻尼五金 + 9mm背板 + 增项严控。核心策略：<b>不加钱，靠配置清单死磕到底</b>。</div></div>
+    <div class="tree-row"><div class="tree-budget">4万 ~ 8万</div><div>全国品牌大促价 或 靠谱工厂店。卧室可上禾香板/爱格；铰链DTC全系+重点房间骑马抽；PUR封边必选。核心策略：<b>重点房间升配置，次要房间标准款，绝不当冤大头全屋顶配</b>。</div></div>
+    <div class="tree-row"><div class="tree-budget">8万 ~ 15万</div><div>品牌进口板线 或 高定入门。进口板+进口铰链主力区（门/抽）+局部玻璃灯带。核心策略：<b>工艺项（激光/PUR封边、木皮混搭）优先于板材再升级</b>。</div></div>
+    <div class="tree-row"><div class="tree-budget">15万 ~ 25万+</div><div>高定工作室/进口体系（威法、图森、木里木外、nobilia柏丽等）。全屋设计一体的空间方案、细节收口、灯光设计。核心策略：<b>选设计师重于选品牌</b>；盯设计与落地的一致性。</div></div>
+  </div>
+</section>
+
+<!-- ================= 第8章 流程合同 ================= -->
+<section id="s8">
+  <div class="sec-head"><span class="no">08</span><h2>流程 · 必问 · 合同 · 验收</h2><span class="en">Playbook</span></div>
+
+  <h3 class="sub-title">七步流程（正常 45-75 天）</h3>
+  <div class="steps">
+    <div class="step"><b>初步沟通</b><p>明确需求柜位、预算区间；听报价口径（投影/展开）。<br><br>⚠️ 先别交钱，先要"含增项明细的预估总价"。</p></div>
+    <div class="step"><b>量房</b><p>复尺数据（垂墙偏差、梁位、管线箱、电梯尺寸）以书面为准。</p></div>
+    <div class="step"><b>方案出图</b><p>平面+立面+内部分区；3D效果图。约定免费改图次数。</p></div>
+    <div class="step"><b>配置报价</b><p>★核心环节：逐项落到<b>配置清单</b>（板材品牌等级×五金型号×数量×单价）。同类三家同口径比。</p></div>
+    <div class="step"><b>签约</b><p>合同+图纸+配置清单三件套。<b>总价闭口/增项需书面确认</b>条款、付款节奏、违约金写明。</p></div>
+    <div class="step"><b>复尺下单</b><p>贴砖/吊顶/地面完成后二次复尺，签字确认生产图。板材到场验批次钢印。</p></div>
+    <div class="step"><b>安装与验收</b><p>对照配置清单逐项验收；<b>验完再付尾款</b>；留存质保凭证（柜体/五金分开算质保）。</p></div>
+  </div>
+
+  <h3 class="sub-title">签必然问销售 10 问（录音都行）</h3>
+  <div class="card">
+    <div class="grid2">
+      <div>
+        <div class="qa"><div class="q">报价按投影还是展开？投影含不含门板背板背？</div><div class="a">让他按你家的图纸算出<b>含门板的总价</b>，再除以投影面积=真实单价，写下来。</div></div>
+        <div class="qa"><div class="q">基材哪家厂、什么等级？报告编号给我看？</div><div class="a">要带CMA/CNAS章的报告原件照片+批次对应关系，合同写品牌+等级+"假一赔十"。</div></div>
+        <div class="qa"><div class="q">背板多厚？升级到9mm加多少？</div><div class="a">答案应是具体数字；"都是标准厚度"= 5mm 的委婉说法。</div></div>
+        <div class="qa"><div class="q">见光板哪些位置要收费，单价多少？</div><div class="a">让销售直接在图纸上标黄所有见光面，算总价。</div></div>
+        <div class="qa"><div class="q">铰链滑轨什么品牌什么型号？阻尼加多少？</div><div class="a">认型号不认中文品名（百隆Blum CLIP top 71B3550 这种颗粒度）。</div></div>
+      </div>
+      <div>
+        <div class="qa"><div class="q">抽屉含几个？超出单价？骑马抽升级多少？</div><div class="a">"每3-5㎡送1个"是行业默认含的少；给出你规划的真实抽屉数一口价。</div></div>
+        <div class="qa"><div class="q">门高多少算非标？拉直器加多少一根？</div><div class="a">2.0/2.4m是分水岭；通高是颜值税，是否值得交看预算。</div></div>
+        <div class="qa"><div class="q">灯带、玻璃门、调整条的单价，能否打包？</div><div class="a">所有"还没定"的项都锁个单价留白，避免签后鱼肉。</div></div>
+        <div class="qa"><div class="q">质保几年？柜体和五金分开算吗？</div><div class="a">柜体常见3-5年；阻尼铰链多为终身（凭证保修）。口头承诺落合同。</div></div>
+        <div class="qa"><div class="q">总价还有没有可能加项？可以写"无书面确认不加价"吗？</div><div class="a">敢写=有底气。写不进合同的商家，按二倍心理准备落地价。</div></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub-title">合同 8 条（照抄可救命）</h3>
+  <div class="card">
+    <table style="min-width:0;">
+      <tr><td style="width:150px;"><b>① 配置清单附件</b></td><td>板材（品牌/基材/等级/批号）× 五金（品牌/型号/数量/单价）× 封边工艺 × 背板厚度 × 逐项单价，做成附件与合同同效力。</td></tr>
+      <tr><td><b>② 总价闭口</b></td><td>"合同总价为闭口价，任何增项须书面确认并双签后生效；口头承诺无效。"</td></tr>
+      <tr><td><b>③ 付款节奏</b></td><td>定金≤10% → 下单生产付至60% → 发货前付至90% → <b>安装验收后付清5-10%尾款</b>（或留存6个月质保金）。</td></tr>
+      <tr><td><b>④ 图纸与生产一致性</b></td><td>签字版图纸为合同附件；改动双方签字留痕；到场板材批次可供业主拍照核对。</td></tr>
+      <tr><td><b>⑤ 交付周期</b></td><td>约定45-60天，逾期违约金（日万分之五起）封顶双方合理。</td></tr>
+      <tr><td><b>⑥ 自购/自带物料</b></td><td>自购五金安装收费提前约定，避免安装日坐地加价。</td></tr>
+      <tr><td><b>⑦ 环保承诺</b></td><td>等级承诺+E0/ENF报告附件；"<b>安装完成后可委托CMA机构复检，超标商家负责更换并退款</b>"（可谈，谈不下也要留报告原件）。</td></tr>
+      <tr><td><b>⑧ 安装标准</b></td><td>门缝均匀（≤2mm常见）、柜体垂直、现场打孔封堵防潮、成品保护、垃圾清运。</td></tr>
+    </table>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h5>🎯 砍价 6 招（实战向）</h5>
+      <ol style="padding-left:20px;font-size:14.5px;">
+        <li style="margin-bottom:6px;"><b>同口径三家互压</b>：配置清单同步发给A/B/C，拿"B总价"砍A，直接谈总价不谈单价。</li>
+        <li style="margin-bottom:6px;"><b>节点蹲大促</b>：315/618/双11/年末冲量，"工厂直供价+卖场补贴"叠加时砍下的空间，平时给不了。</li>
+        <li style="margin-bottom:6px;"><b>增项单价打包谈</b>：单砍柜体单价没意义，<b>把抽屉、见光、拉直器、五金升级全部折进总价一次性谈</b>（增项才是利润池）。</li>
+        <li style="margin-bottom:6px;"><b>赠品折现</b>：送挂烫机/碗碟别要，直接抵现或升级五金。</li>
+        <li style="margin-bottom:6px;"><b>旧房折价</b>：旧柜拆除、旧地板保护等让给装企总包，不要柜商来报。</li>
+        <li><b>结尾款留力</b>：谈的余地=验收前的尾款。全付完了你就没有筹码。</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h5>✅ 到货安装验收清单（打印跟单）</h5>
+      <table style="min-width:0;">
+        <tr><td><b>板材核对</b></td><td>看侧面钢印/喷码与报告批次；破损板材当场拒收</td></tr>
+        <tr><td><b>外观</b></td><td>封边无毛刺崩口；饰面无划伤；颜色对色号</td></tr>
+        <tr><td><b>结构</b></td><td>柜体正/侧视垂直；水平仪靠一靠；吊码全数打膨胀</td></tr>
+        <tr><td><b>门缝</b></td><td>均匀，常见 ≤2mm，对开门高低一致</td></tr>
+        <tr><td><b>五金</b></td><td>逐扇门开合10次，阻尼顺滑无异响；<b>数铰链螺丝是否满打</b>（少装=降配）；抽屉满行程推拉；拉直器确实装了（看门顶槽）</td></tr>
+        <tr><td><b>功能位</b></td><td>见光板颜色一致；背板敲实心感；检修口能开；感应灯能亮</td></tr>
+        <tr><td><b>工艺细节</b></td><td>现场开孔（插座位）做了封堵封边；打胶是防霉胶；踢脚线水平</td></tr>
+        <tr><td><b>收尾</b></td><td>垃圾清运、成品保护膜；保留<strong>安装完成确认单</strong>再付尾款；质保卡与五金保修卡归档</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note tip"><b>环保复检时机</b>：安装完柜子+房门关12小时后再测才有意义；选 CMA 机构（司法认可），普通家用自测盒只能看趋势。<b>TVOC 也测一下</b>——板材之外大量有机挥发物来自胶、漆、封边背衬。绿植、通风、新风机都只是缓解，<b>时间才是最好的甲醛消除剂</b>，旺季交付的房子入住前至少留一个月叠加通风期。</div>
+</section>
+
+<!-- ================= 第9章 工具 ================= -->
+<section id="s9">
+  <div class="sec-head"><span class="no">09</span><h2>工具：预算估算器 + 增项核对清单</h2><span class="en">Tools</span></div>
+  <p class="sec-lead">两个实用工具：<b>①预算估算器</b>——按你的面积和配置算出落地总价区间，对比广告套餐价；<b>②增项核对清单</b>——勾选后一键生成"发给商家的核对单"，逐项确认含/不含与单价。<span style="color:var(--gray-light)">（勾选状态自动保存在本机浏览器）</span></p>
+
+  <div class="tool-grid">
+    <!-- 估算器 -->
+    <div class="calculator">
+      <h5>🧮 全屋定制落地预算估算器</h5>
+      <div class="desc">口径：投影面积㎡ · 2026华东行情 · 结论=区间参考，实际以配置清单报价为准</div>
+
+      <div class="field">
+        <label>全屋柜体总投影面积 <span class="hint">100㎡住宅常见值约 35-55㎡</span></label>
+        <input type="number" id="calArea" value="45" min="1" max="200" step="0.5">
+      </div>
+
+      <div class="field">
+        <label>渠道档位 <span class="hint">决定基础单价区间（元/㎡投影）</span></label>
+        <div class="seg" id="calTier">
+          <label><input type="radio" name="tier" value="T1" checked>普惠套餐/工厂店·国产板<small>约500-900/㎡</small></label>
+          <label><input type="radio" name="tier" value="T2">全国品牌主系列<small>约1000-1500/㎡</small></label>
+          <label><input type="radio" name="tier" value="T5">工厂店·进口板（爱格等）<small>约1100-1800/㎡</small></label>
+          <label><input type="radio" name="tier" value="T4">品牌进口线/高定<small>约1800-3200/㎡</small></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>背板厚度</label>
+        <div class="seg" id="calBack">
+          <label><input type="radio" name="back" value="B5">5mm 薄背板<small>套餐默认·不推荐</small></label>
+          <label><input type="radio" name="back" value="B9" checked>9mm 推荐位<small>+40-90/㎡</small></label>
+          <label><input type="radio" name="back" value="B18">18mm 加强位<small>+90-140/㎡</small></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>五金配置</label>
+        <div class="seg" id="calHw">
+          <label><input type="radio" name="hw" value="H1" checked>国产一线全套<small>DTC/悍高·阻尼</small></label>
+          <label><input type="radio" name="hw" value="H2">进口铰链+国产抽<small>百隆/海蒂诗铰链</small></label>
+          <label><input type="radio" name="hw" value="H3">进口全套含骑马抽<small>+5500-9500</small></label>
+        </div>
+      </div>
+
+      <div class="grid2" style="gap:10px;">
+        <div class="field"><label>额外抽屉数 <span class="hint">超出套餐赠送</span></label><input type="number" id="calDrawer" value="6" min="0" max="40"></div>
+        <div class="field"><label>一门到顶门扇数 <span class="hint">须装拉直器</span></label><input type="number" id="calTall" value="4" min="0" max="30"></div>
+      </div>
+      <div class="grid2" style="gap:10px;">
+        <div class="field"><label>玻璃门面积（㎡）</label><input type="number" id="calGlass" value="0" min="0" max="30" step="0.5"></div>
+        <div class="field"><label>见光板是否按市场价单算</label>
+          <div class="switch-row" style="padding:0;">
+            <input type="checkbox" id="calSjg">
+            <span style="font-size:13px;">未打包 · 单独计价<b style="color:#B42323">（商家漏报时勾上）</b></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="switch-row">
+        <input type="checkbox" id="calLight">
+        <span>含全屋灯带+变压器（约 +3000-6000）</span>
+      </div>
+
+      <div class="result">
+        <div class="r-title">落地总价估算区间</div>
+        <div class="r-money" id="rMoney">— <small>万元</small></div>
+        <div class="r-gap" id="rGap">—</div>
+        <table id="rTable"></table>
+        <div class="r-note">口径：基础单价按区间下限/上限分别计算；见光板按投影15-20%×500-800/㎡估算；运输安装默认含。本工具为知识科普用途的粗算模型，非报价依据。</div>
+      </div>
+    </div>
+
+    <!-- 增项清单 -->
+    <div class="checklist">
+      <h5>📋 增项核对清单（发给商家版）</h5>
+      <div class="desc">把担心的事勾上 → 一键复制 → 粘贴到微信发给销售，让他们逐项填写并盖章回传</div>
+      <div class="chk-head">
+        <div class="chk-count">已勾选 <b id="chkNum">0</b> / <span id="chkTotal">0</span> 项</div>
+        <button class="btn ghost" id="chkReset" style="padding:6px 14px;font-size:13px;">清空勾选</button>
+      </div>
+      <div class="chk-list" id="chkList"></div>
+      <div class="toolbar">
+        <button class="btn" id="chkCopy">📋 复制核对清单文本</button>
+      </div>
+      <div class="note tip" style="margin-top:14px;font-size:13.5px;margin-bottom:0;"><b>用法建议</b>：把复制出的文本发给至少3家商家，请他们<b>逐项填写"是否包含/单价/数量"并签字盖章</b>，回传后按同口径合并对比——这张表本身就是最有杀伤力的比价工具。</div>
+    </div>
+  </div>
+
+  <h3 class="sub-title">一图流记住全站（8张记忆卡）</h3>
+  <div class="mem-cards">
+    <div class="mem"><b>板材：只认两样</b>基材大厂品牌 + 环保等级报告（ENF/E0）。"实木颗粒板""生态板""康纯板"都是话术外壳。</div>
+    <div class="mem blue2"><b>区域策略</b>卧室ENF起步；厨柜多层板+铝箔防水；密度板不入潮区；多层板当"升级"卖你时，想想胶用量。</div>
+    <div class="mem blue3"><b>封边是分水岭</b>深色/肤感板必配PUR封边，EVA黑胶线三年开边。摸对角线、看侧光，一眼识破。</div>
+    <div class="mem blue4"><b>五金甜点位</b>国产DTC全系带阻尼+重点房间骑马抽+水槽柜不锈钢铰链=性价比最优解。全进口全家桶差价1500-3000，按需上。</div>
+    <div class="mem"><b>套餐即门票</b>499是入场券，落地普遍×1.5-2.5。见光板、抽屉、拉直器、灯带四件套是增项主力。</div>
+    <div class="mem blue2"><b>比价唯一正解</b>同图纸同配置清单，"含门板总价÷投影"，对比总价不比单价。</div>
+    <div class="mem blue3"><b>合同三件套</b>合同+签字图纸+配置清单附件；总价闭口+增项书面确认；尾款留到验收后。</div>
+    <div class="mem blue4"><b>2026新规矩</b>强制E0（GB 18580-2025）；行业关店潮下，小额定金+直营/加盟确认+书面交付保障，缺一不可。</div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>数据口径与说明</b><br>
+    · 本页为家居知识科普网站，价格与行情均为 <b>2026年11月整理的区间参考</b>（华东/上海市场），主要依据当年度公开报道（价格战套餐行情、增项投诉案例、五金零售差价）与行业通用常识折算；实际成交受品牌活动、板材批次、城市与门店差异影响，以商家书面报价为准。<br>
+    · 环保等级数值引自 GB/T 39600-2021 与 GB 18580-2025 标准口径；F★★★★为日本JIS标准、检测方法不同，不可与国标数值直接换算。<br>
+    · 文中品牌信息仅为行业知识梳理，不构成任何购买推荐；页面离线可用，无任何外部依赖，勾选状态仅保存在本机浏览器 localStorage。<br>
+    <div class="aigc">本页面内容由 AI 生成的科普性信息整理，仅供学习参考，不构成消费建议。价格请以实际询价为准。</div>
+  </div>
+</footer>
+
+<button id="backtop" title="回到顶部">↑</button>
+<div id="toast"></div>
+
+<script>
+/* ====== 导航 scroll-spy ====== */
+var navLinks = document.querySelectorAll('#navlinks a');
+var sections = ['s0','s1','s2','s3','s4','s5','s6','s7','s8','s9'];
+var obs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      var id = e.target.id;
+      navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#'+id); });
+    }
+  });
+},{rootMargin:'-30% 0px -65% 0px'});
+sections.forEach(function(id){ var el = document.getElementById(id); if(el) obs.observe(el); });
+
+/* ====== 回到顶部 ====== */
+var backtop = document.getElementById('backtop');
+window.addEventListener('scroll', function(){
+  if(window.scrollY > 600){ backtop.classList.add('show'); } else { backtop.classList.remove('show'); }
+});
+backtop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+/* ====== Toast ====== */
+var toastTimer = null;
+function showToast(msg){
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2600);
+}
+
+/* ====== 预算估算器 ====== */
+var TIER = {
+  T1:{name:'普惠套餐/工厂店·国产板', low:550, high:900},
+  T2:{name:'全国品牌主系列', low:1000, high:1500},
+  T5:{name:'工厂店·进口板', low:1100, high:1800},
+  T4:{name:'品牌进口线/高定', low:1800, high:3200}
+};
+var BACK = { B5:[0,0], B9:[40,90], B18:[90,140] };
+var HW = { H1:[0,0], H2:[2500,4500], H3:[5500,9500] };
+
+function fm(n){ return n.toLocaleString('zh-CN'); }
+
+function calc(){
+  var area = parseFloat(document.getElementById('calArea').value) || 0;
+  var tierV = document.querySelector('input[name=tier]:checked').value;
+  var backV = document.querySelector('input[name=back]:checked').value;
+  var hwV = document.querySelector('input[name=hw]:checked').value;
+  var drawer = parseInt(document.getElementById('calDrawer').value) || 0;
+  var tall = parseInt(document.getElementById('calTall').value) || 0;
+  var glass = parseFloat(document.getElementById('calGlass').value) || 0;
+  var sjg = document.getElementById('calSjg').checked;
+  var light = document.getElementById('calLight').checked;
+
+  var t = TIER[tierV], b = BACK[backV], h = HW[hwV];
+
+  var baseLow = area * t.low, baseHigh = area * t.high;
+  var backLow = area * b[0], backHigh = area * b[1];
+  var hwLow = h[0], hwHigh = h[1];
+  var drLow = drawer * 300, drHigh = drawer * 600;
+  var tallLow = tall * 130, tallHigh = tall * 200;
+  var glLow = glass * 1300, glHigh = glass * 2000;
+  var sjgLow = sjg ? area * 0.15 * 500 : 0, sjgHigh = sjg ? area * 0.20 * 800 : 0;
+  var liLow = light ? 3000 : 0, liHigh = light ? 6000 : 0;
+
+  var sumLow = baseLow+backLow+hwLow+drLow+tallLow+glLow+sjgLow+liLow;
+  var sumHigh = baseHigh+backHigh+hwHigh+drHigh+tallHigh+glHigh+sjgHigh+liHigh;
+
+  document.getElementById('rMoney').innerHTML =
+    (sumLow/10000).toFixed(1) + ' ~ ' + (sumHigh/10000).toFixed(1) + ' <small>万元</small>';
+
+  var adPrice = area * 499;
+  document.getElementById('rGap').innerHTML =
+    '📡 对比广告套餐入场价 ≈ ' + fm(adPrice) + ' 元（' + (adPrice/10000).toFixed(1) + ' 万，按 499元/㎡）' +
+    '<br>即使按区间下限，落地也比套餐广告价高 <b>+ ' + Math.round((sumLow/adPrice-1)*100) + '%</b> 左右 —— 这就是"门票与全片"的差距。';
+
+  var rows = [
+    ['基础柜体+门板（'+t.name+'）', baseLow, baseHigh],
+    ['背板厚度差价', backLow, backHigh],
+    ['五金配置差价', hwLow, hwHigh],
+    ['额外交屉 × '+drawer+' 个', drLow, drHigh],
+    ['拉直器/通高门 × '+tall+' 扇', tallLow, tallHigh],
+    ['玻璃门 '+glass+' ㎡', glLow, glHigh],
+    ['见光板单独计价', sjgLow, sjgHigh],
+    ['灯带+变压器', liLow, liHigh]
+  ];
+  var html = '<thead><tr><th>分项</th><th style="text-align:right;">低（元）</th><th style="text-align:right;">高（元）</th></tr></thead><tbody>';
+  rows.forEach(function(r){
+    if(r[1]===0 && r[2]===0) return;
+    html += '<tr><td>'+r[0]+'</td><td style="text-align:right;">'+fm(Math.round(r[1]))+'</td><td style="text-align:right;">'+fm(Math.round(r[2]))+'</td></tr>';
+  });
+  html += '<tr><td style="font-weight:800;color:#FFD98A;">合计</td><td style="text-align:right;font-weight:800;color:#FFD98A;">'+fm(Math.round(sumLow))+'</td><td style="text-align:right;font-weight:800;color:#FFD98A;">'+fm(Math.round(sumHigh))+'</td></tr>';
+  html += '</tbody>';
+  document.getElementById('rTable').innerHTML = html;
+}
+
+['calArea','calDrawer','calTall','calGlass','calSjg','calLight'].forEach(function(id){
+  document.getElementById(id).addEventListener('input', calc);
+});
+document.querySelectorAll('input[name=tier],input[name=back],input[name=hw]').forEach(function(r){
+  r.addEventListener('change', calc);
+});
+calc();
+
+/* ====== 增项核对清单 ====== */
+var CHK_ITEMS = [
+  {t:'报价口径',p:'',d:'按投影还是展开？投影是否含门板、背板、见光板、基础层板与挂衣杆？含抽屉几个？'},
+  {t:'基材品牌与等级',p:'',d:'基材供应商名称+环保等级（ENF/E0），附CMA章检测报告编号，合同写明品牌等级并"假一赔十"。'},
+  {t:'背板厚度',p:'+40-90/㎡投影',d:'默认是5mm还是9mm？要求9mm以上，升级差价多少？'},
+  {t:'封边工艺',p:'+15-25元/延米',d:'EVA还是PUR？深色/肤感门板要求PUR封边，封边带厚度≥1.5mm。'},
+  {t:'见光板',p:'500-800/㎡',d:'图纸标注见光范围，单价多少？可否打包进柜体单价，不按㎡单算？'},
+  {t:'铰链品牌型号',p:'+40-120/只升级',d:'基础款是什么品牌？升级DTC/百隆每只多少钱？写明型号。水槽柜/浴室柜为304不锈钢铰链。'},
+  {t:'抽屉',p:'300-600/个',d:'套餐含几个？超出单价？三节轨还是骑马抽，升级骑马抽加多少？'},
+  {t:'滑轨',p:'20-60/套',d:'三节静音滑轨是否标配阻尼缓冲？'},
+  {t:'拉直器',p:'80-200/根',d:'哪些门算超高门？通高门扇数×单价多少？能否含进套餐？'},
+  {t:'五金数量核对',p:'',d:'按门高给出铰链数量明细（0.9m内2只、1.6m 3只、2.0m 4只），安装时逐扇核对螺丝满打。'},
+  {t:'非标尺寸附加',p:'+10-30%',d:'柜高超过多少算非标？超深（>600mm）、异形切角如何加价？能否分体设计规避？'},
+  {t:'玻璃门/铝框',p:'1200-2000/㎡门',d:'防爆膜标配吗？五金铰链是否另算？'},
+  {t:'灯带及电源',p:'3000-6000/全屋',d:'灯带、变压器、开槽走线谁负责？电位由水电预留，避免重复收费。'},
+  {t:'台面（橱柜）',p:'石英石400-1500/㎡',d:'台面品牌、厚度、垫板（整垫板优于垫条）、水槽灶位开孔费由谁承担？'},
+  {t:'水槽柜防水处理',p:'+80-150',d:'底板是否覆铝箔/防水垫？标配还是要加钱？'},
+  {t:'调整条/封板/踢脚',p:'80-200/块或延米',d:'墙不平的收口如何计费？可否归入柜体总价？'},
+  {t:'罗马柱/造型线',p:'150-400/延米',d:'是否需要；不需要的写"不做"，防止被顺手装上要钱。'},
+  {t:'检修口/活动背板',p:'+100-200/处',d:'被柜体遮挡的电箱/水阀/分集水器位置必须留检修位。'},
+  {t:'运输+上楼+安装',p:'全屋500-3000',d:'总报价是否含？超长件进不了电梯时上楼费谁出？'},
+  {t:'旧柜拆除清运',p:'100-300/延米',d:'是否需要，由柜商做还是装修总包承担？'},
+  {t:'设计费与改图',p:'0-1500',d:'设计费收不收？免费改图几次？复尺是否收费？'},
+  {t:'质保条款',p:'',d:'柜体质保几年？五金质保几年（铰链多承诺终身）？环保等级是否写进合同、能否CMA复检？'},
+  {t:'付款节奏与总额',p:'',d:'定金比例、下单/发货/尾款比例；总价是否闭口，增项须书面双签确认；逾期违约条款。'}
+];
+
+var LS_KEY = 'qwdiy_addon_checklist_v1';
+var saved = {};
+try{ saved = JSON.parse(localStorage.getItem(LS_KEY)) || {}; }catch(e){ saved = {}; }
+
+var chkList = document.getElementById('chkList');
+function renderChk(){
+  var html = '';
+  CHK_ITEMS.forEach(function(it, i){
+    var done = !!saved[i];
+    html += '<div class="chk-item'+(done?' done':'')+'" data-i="'+i+'">'
+      + '<input type="checkbox" '+(done?'checked':'')+' data-c="'+i+'">'
+      + '<div><div class="t">'+it.t+(it.p?'<span class="chkprice">'+it.p+'</span>':'')+'</div><div class="d">'+it.d+'</div></div>'
+      + '</div>';
+  });
+  chkList.innerHTML = html;
+  var n = 0;
+  CHK_ITEMS.forEach(function(_,i){ if(saved[i]) n++; });
+  document.getElementById('chkNum').textContent = n;
+  document.getElementById('chkTotal').textContent = CHK_ITEMS.length;
+}
+chkList.addEventListener('click', function(e){
+  var item = e.target.closest('.chk-item');
+  if(!item) return;
+  var i = item.getAttribute('data-i');
+  saved[i] = !saved[i];
+  if(!saved[i]) delete saved[i];
+  try{ localStorage.setItem(LS_KEY, JSON.stringify(saved)); }catch(err){}
+  renderChk();
+});
+document.getElementById('chkReset').addEventListener('click', function(){
+  saved = {};
+  try{ localStorage.setItem(LS_KEY, '{}'); }catch(e){}
+  renderChk();
+  showToast('已清空全部勾选');
+});
+renderChk();
+
+/* 复制核对清单 */
+document.getElementById('chkCopy').addEventListener('click', function(){
+  var txt = '【全屋定制增项核对清单】\n';
+  txt += '请贵司逐项确认「是否包含于报价 / 单价 / 数量」，并回传签署版作为合同附件。\n';
+  txt += '注：未勾选项也请回复"不含"。\n—————————————————\n';
+  var sel = 0;
+  CHK_ITEMS.forEach(function(it, i){
+    var mark = saved[i] ? '✅[我重点确认] ' : '   ';
+    var extra = it.p ? '（市场参考价：'+it.p+'）' : '';
+    txt += mark + (i+1) + '. ' + it.t + extra + '\n   确认口径：'+ it.d +'\n   含/不含：____  单价：____  数量：____\n';
+    if(saved[i]) sel++;
+  });
+  txt += '—————————————————\n';
+  txt += '另请确认：① 总价为闭口价，任何增项须书面双签后生效；\n';
+  txt += '② 到场板材保留钢印/喷码供业主核对批次；\n';
+  txt += '③ 付款节奏与尾款于安装验收后支付。\n';
+  txt += '【待贵司填写并盖章】____年____月____日\n';
+
+  function fallbackCopy(){
+    var ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{
+      document.execCommand('copy');
+      showToast('清单已复制（含 ' + sel + ' 项重点确认），粘贴发给商家吧');
+    }catch(er){
+      showToast('复制失败，请手动复制弹窗内容');
+      window.prompt('长按/Ctrl+C 复制以下内容：', txt);
+    }
+    document.body.removeChild(ta);
+  }
+
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(function(){
+      showToast('✅ 清单已复制（含 ' + sel + ' 项重点确认），粘贴发给商家吧');
+    }).catch(fallbackCopy);
+  } else {
+    fallbackCopy();
+  }
+});
+</script>
+</body>
+</html>
